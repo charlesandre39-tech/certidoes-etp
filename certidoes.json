@@ -3,6 +3,12 @@
   "atualizado": "2026-05-25",
   "certidoes": [
     {
+      "nome": "CND SEFAZ",
+      "orgao": "Secretaria de Fazenda",
+      "vencimento": "2026-05-01",
+      "arquivo": "CND SEFAZ 01-05-2026.pdf"
+    },
+    {
       "nome": "CND FALÊNCIA",
       "orgao": "Junta Comercial",
       "vencimento": "2026-05-28",
@@ -13,12 +19,6 @@
       "orgao": "Caixa Econômica Federal",
       "vencimento": "2026-05-31",
       "arquivo": "CND FGTS 31-05-2026.pdf"
-    },
-    {
-      "nome": "CND SEFAZ",
-      "orgao": "Secretaria de Fazenda",
-      "vencimento": "2026-06-01",
-      "arquivo": "CND SEFAZ 01-06-2026.pdf"
     },
     {
       "nome": "Certidões Válidas até",
