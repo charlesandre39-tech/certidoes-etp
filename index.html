@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certidões — ETP Consultoria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0f11;
+    --surface: #16181c;
+    --border: #252830;
+    --text: #e8eaf0;
+    --muted: #5a5f6e;
+    --accent: #c8f060;
+    --red: #ff5e5e;
+    --orange: #ffaa3c;
+    --green: #60f0a8;
+    --blue: #60c8f0;
+    --red-bg: rgba(255,94,94,0.08);
+    --orange-bg: rgba(255,170,60,0.08);
+    --green-bg: rgba(96,240,168,0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(200,240,96,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200,240,96,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  /* Header */
+  .header { margin-bottom: 48px; }
+  .header-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .logo-area { }
+  .tag { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; }
+  h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 800; line-height: 1.1; color: var(--text); }
+  h1 span { color: var(--accent); }
+  .updated { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 10px; }
+
+  /* Score ring */
+  .score-ring { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .ring-wrap { position: relative; width: 80px; height: 80px; }
+  .ring-wrap svg { transform: rotate(-90deg); }
+  .ring-track { fill: none; stroke: var(--border); stroke-width: 6; }
+  .ring-fill { fill: none; stroke-width: 6; stroke-linecap: round; transition: stroke-dashoffset 1s ease; }
+  .ring-label { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .ring-num { font-size: 20px; font-weight: 700; line-height: 1; }
+  .ring-sub { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
+  .score-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-align: center; }
+
+  /* Metrics strip */
+  .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 40px; }
+  .metric { background: var(--surface); padding: 20px 16px; }
+  .metric-val { font-size: 32px; font-weight: 700; line-height: 1; }
+  .metric-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; }
+  .val-red { color: var(--red); }
+  .val-orange { color: var(--orange); }
+  .val-green { color: var(--green); }
+  .val-blue { color: var(--blue); }
+
+  /* Section label */
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 12px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* Cert cards */
+  .cert-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+    border-left: 3px solid transparent;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+    animation: fadeUp 0.4s ease both;
+  }
+  .cert-card:hover { transform: translateX(4px); }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .cert-card.red  { border-left-color: var(--red);    background: color-mix(in srgb, var(--surface) 96%, var(--red)); }
+  .cert-card.orange { border-left-color: var(--orange); background: color-mix(in srgb, var(--surface) 96%, var(--orange)); }
+  .cert-card.green  { border-left-color: var(--green);  background: color-mix(in srgb, var(--surface) 96%, var(--green)); }
+
+  .cert-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .dot-red    { background: var(--red);    box-shadow: 0 0 8px var(--red); }
+  .dot-orange { background: var(--orange); box-shadow: 0 0 8px var(--orange); }
+  .dot-green  { background: var(--green);  box-shadow: 0 0 8px var(--green); }
+
+  .cert-info { flex: 1; min-width: 0; }
+  .cert-name { font-size: 15px; font-weight: 600; }
+  .cert-org  { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  .cert-right { text-align: right; flex-shrink: 0; }
+  .cert-dias  { font-size: 22px; font-weight: 700; line-height: 1; }
+  .cert-dias-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 2px; }
+  .cert-date { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+  .pill { display: inline-block; font-family: 'DM Mono', monospace; font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px; }
+  .pill-red    { background: var(--red-bg);    color: var(--red); }
+  .pill-orange { background: var(--orange-bg); color: var(--orange); }
+  .pill-green  { background: var(--green-bg);  color: var(--green); }
+
+  /* Footer */
+  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .footer-path { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); }
+  .footer-brand { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); }
+
+  /* Loading */
+  #loading { text-align: center; padding: 80px 0; }
+  .spinner { width: 32px; height: 32px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 600px) {
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+    .cert-card { flex-wrap: wrap; }
+    .cert-right { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="loading">
+    <div class="spinner"></div>
+    <p style="font-family:'DM Mono',monospace;font-size:12px;color:var(--muted)">Carregando certidões...</p>
+  </div>
+  <div id="app" style="display:none"></div>
+</div>
+
+<script>
+const hoje = new Date();
+hoje.setHours(0,0,0,0);
+
+function diasRestantes(vencStr) {
+  const [y,m,d] = vencStr.split('-').map(Number);
+  const venc = new Date(y, m-1, d);
+  return Math.ceil((venc - hoje) / 86400000);
+}
+
+function fmtData(vencStr) {
+  const [y,m,d] = vencStr.split('-').map(Number);
+  return `${String(d).padStart(2,'0')}/${String(m).padStart(2,'0')}/${y}`;
+}
+
+function statusInfo(dias) {
+  if (dias < 0)  return { cls: 'red',    dot: 'dot-red',    pill: 'pill-red',    label: 'Vencida',  cor: 'var(--red)' };
+  if (dias <= 5) return { cls: 'red',    dot: 'dot-red',    pill: 'pill-red',    label: 'Crítico',  cor: 'var(--red)' };
+  if (dias <= 30) return { cls: 'orange', dot: 'dot-orange', pill: 'pill-orange', label: 'Atenção',  cor: 'var(--orange)' };
+  return             { cls: 'green',  dot: 'dot-green',  pill: 'pill-green',  label: 'Em dia',   cor: 'var(--green)' };
+}
+
+function renderApp(data) {
+  const certs = data.certidoes.map(c => ({ ...c, dias: diasRestantes(c.vencimento) }));
+  certs.sort((a,b) => a.dias - b.dias);
+
+  const vencidas = certs.filter(c => c.dias < 0).length;
+  const criticas = certs.filter(c => c.dias >= 0 && c.dias <= 5).length;
+  const atencao  = certs.filter(c => c.dias > 5 && c.dias <= 30).length;
+  const ok       = certs.filter(c => c.dias > 30).length;
+
+  const score = Math.round((ok / certs.length) * 100);
+  const circ = 2 * Math.PI * 30;
+  const scoreColor = score >= 80 ? 'var(--green)' : score >= 50 ? 'var(--orange)' : 'var(--red)';
+
+  const dataAtual = hoje.toLocaleDateString('pt-BR', { day:'2-digit', month:'long', year:'numeric' });
+  const atualizado = data.atualizado ? new Date(data.atualizado + 'T12:00:00').toLocaleDateString('pt-BR') : '—';
+
+  function grupo(titulo, lista, delay) {
+    if (!lista.length) return '';
+    const cards = lista.map((c, i) => {
+      const s = statusInfo(c.dias);
+      const diasLabel = c.dias < 0 ? `${Math.abs(c.dias)}d` : `${c.dias}d`;
+      const diasSub   = c.dias < 0 ? 'atrás' : c.dias === 0 ? 'hoje!' : 'restantes';
+      return `
+        <div class="cert-card ${s.cls}" style="animation-delay:${(delay+i)*0.06}s">
+          <div class="cert-dot ${s.dot}"></div>
+          <div class="cert-info">
+            <div class="cert-name">${c.nome}</div>
+            <div class="cert-org">${c.orgao}</div>
+            <span class="pill ${s.pill}">${s.label}</span>
+          </div>
+          <div class="cert-right">
+            <div class="cert-dias" style="color:${s.cor}">${diasLabel}</div>
+            <div class="cert-dias-label">${diasSub}</div>
+            <div class="cert-date">${fmtData(c.vencimento)}</div>
+          </div>
+        </div>`;
+    }).join('');
+    return `<div class="section-label">${titulo}</div>${cards}`;
+  }
+
+  document.getElementById('app').innerHTML = `
+    <div class="header">
+      <div class="header-top">
+        <div class="logo-area">
+          <div class="tag">Painel de Certidões</div>
+          <h1>${data.empresa.split(' ')[0]} <span>${data.empresa.split(' ').slice(1).join(' ')}</span></h1>
+          <div class="updated">atualizado em ${atualizado} · hoje é ${dataAtual}</div>
+        </div>
+        <div class="score-ring">
+          <div class="ring-wrap">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+              <circle class="ring-track" cx="40" cy="40" r="30"/>
+              <circle class="ring-fill" cx="40" cy="40" r="30"
+                stroke="${scoreColor}"
+                stroke-dasharray="${circ}"
+                stroke-dashoffset="${circ - (score/100)*circ}"
+                id="ring-anim"/>
+            </svg>
+            <div class="ring-label">
+              <div class="ring-num" style="color:${scoreColor}">${score}%</div>
+              <div class="ring-sub">em dia</div>
+            </div>
+          </div>
+          <div class="score-label">saúde<br>documental</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><div class="metric-val val-red">${vencidas}</div><div class="metric-label">Vencidas</div></div>
+      <div class="metric"><div class="metric-val val-orange">${criticas}</div><div class="metric-label">Crítico ≤5d</div></div>
+      <div class="metric"><div class="metric-val val-blue">${atencao}</div><div class="metric-label">Atenção ≤30d</div></div>
+      <div class="metric"><div class="metric-val val-green">${ok}</div><div class="metric-label">Em dia</div></div>
+    </div>
+
+    ${grupo('🔴 Vencidas / Críticas', certs.filter(c => c.dias <= 5), 0)}
+    ${grupo('🟡 Atenção — vencem em até 30 dias', certs.filter(c => c.dias > 5 && c.dias <= 30), 3)}
+    ${grupo('🟢 Em dia', certs.filter(c => c.dias > 30), 5)}
+
+    <div class="footer">
+      <div class="footer-path">📁 Certidões_\\ · OneDrive</div>
+      <div class="footer-brand">ETP Consultoria e Assessoria</div>
+    </div>
+  `;
+
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+}
+
+fetch('certidoes.json?v=' + Date.now())
+  .then(r => r.json())
+  .then(renderApp)
+  .catch(() => {
+    document.getElementById('loading').innerHTML =
+      '<p style="color:var(--red);font-family:DM Mono,monospace;font-size:13px">Erro ao carregar certidoes.json</p>';
+  });
+</script>
+</body>
+</html>
