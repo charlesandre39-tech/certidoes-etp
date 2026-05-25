@@ -177,7 +177,7 @@ function fmtData(vencStr) {
 function statusInfo(dias) {
   if (dias < 0)  return { cls: 'red',    dot: 'dot-red',    pill: 'pill-red',    label: 'Vencida',  cor: 'var(--red)' };
   if (dias <= 5) return { cls: 'red',    dot: 'dot-red',    pill: 'pill-red',    label: 'Crítico',  cor: 'var(--red)' };
-  if (dias <= 15) return { cls: 'orange', dot: 'dot-orange', pill: 'pill-orange', label: 'Atenção',  cor: 'var(--orange)' };
+  if (dias <= 15) return { cls: 'blue', dot: 'dot-blue', pill: 'pill-blue', label: 'Atenção',  cor: 'var(--blue)' };
   return             { cls: 'green',  dot: 'dot-green',  pill: 'pill-green',  label: 'Em dia',   cor: 'var(--green)' };
 }
 
