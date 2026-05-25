@@ -261,7 +261,7 @@ function renderApp(data) {
     </div>
 
     ${grupo('🔴 Vencidas / Críticas', certs.filter(c => c.dias <= 5), 0)}
-    ${grupo('🟡 Atenção — vencem em até 15 dias', certs.filter(c => c.dias > 5 && c.dias <= 15), 3)}
+    ${grupo('🔵 Atenção — vencem em até 15 dias', certs.filter(c => c.dias > 5 && c.dias <= 15), 3)}
     ${grupo('🟢 Em dia', certs.filter(c => c.dias > 15), 5)}
 
     <div class="footer">
