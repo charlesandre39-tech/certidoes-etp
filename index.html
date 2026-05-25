@@ -21,6 +21,7 @@
     --red-bg: rgba(255,94,94,0.08);
     --orange-bg: rgba(255,170,60,0.08);
     --green-bg: rgba(96,240,168,0.08);
+    --blue-bg: rgba(96,200,240,0.08);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -113,11 +114,13 @@
   .cert-card.red  { border-left-color: var(--red);    background: color-mix(in srgb, var(--surface) 96%, var(--red)); }
   .cert-card.orange { border-left-color: var(--orange); background: color-mix(in srgb, var(--surface) 96%, var(--orange)); }
   .cert-card.green  { border-left-color: var(--green);  background: color-mix(in srgb, var(--surface) 96%, var(--green)); }
+  .cert-card.blue   { border-left-color: var(--blue);   background: color-mix(in srgb, var(--surface) 96%, var(--blue)); }
 
   .cert-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .dot-red    { background: var(--red);    box-shadow: 0 0 8px var(--red); }
   .dot-orange { background: var(--orange); box-shadow: 0 0 8px var(--orange); }
   .dot-green  { background: var(--green);  box-shadow: 0 0 8px var(--green); }
+  .dot-blue   { background: var(--blue);   box-shadow: 0 0 8px var(--blue); }
 
   .cert-info { flex: 1; min-width: 0; }
   .cert-name { font-size: 15px; font-weight: 600; }
@@ -132,6 +135,7 @@
   .pill-red    { background: var(--red-bg);    color: var(--red); }
   .pill-orange { background: var(--orange-bg); color: var(--orange); }
   .pill-green  { background: var(--green-bg);  color: var(--green); }
+  .pill-blue   { background: var(--blue-bg);   color: var(--blue); }
 
   /* Footer */
   .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
