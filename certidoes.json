@@ -1,19 +1,19 @@
 {
   "empresa": "ETP Consultoria e Assessoria",
   "atualizado": "2026-05-25",
-  "gerado_em": "25/05/2026 14:26",
+  "gerado_em": "25/05/2026 14:27",
   "certidoes": [
-    {
-      "nome": "CND FALÊNCIA",
-      "orgao": "Junta Comercial",
-      "vencimento": "2026-05-03",
-      "arquivo": "CND FALÊNCIA 03-05-2026.pdf"
-    },
     {
       "nome": "Certidões Válidas até",
       "orgao": "—",
       "vencimento": "2026-06-03",
       "arquivo": "Certidões Válidas até 03-06-2026.pdf"
+    },
+    {
+      "nome": "CND FALÊNCIA",
+      "orgao": "Junta Comercial",
+      "vencimento": "2026-06-03",
+      "arquivo": "CND FALÊNCIA 03-06-2026.pdf"
     },
     {
       "nome": "CND SEFAZ",
