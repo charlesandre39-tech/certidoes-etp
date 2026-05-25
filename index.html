@@ -180,7 +180,7 @@ function fmtData(vencStr) {
 
 function statusInfo(dias) {
   if (dias < 0)  return { cls: 'red',    dot: 'dot-red',    pill: 'pill-red',    label: 'Vencida',  cor: 'var(--red)' };
-  if (dias <= 5) return { cls: 'red',    dot: 'dot-red',    pill: 'pill-red',    label: 'Crítico',  cor: 'var(--red)' };
+  if (dias <= 5) return { cls: 'orange', dot: 'dot-orange', pill: 'pill-orange', label: 'Crítico',  cor: 'var(--orange)' };
   if (dias <= 15) return { cls: 'blue', dot: 'dot-blue', pill: 'pill-blue', label: 'Atenção',  cor: 'var(--blue)' };
   return             { cls: 'green',  dot: 'dot-green',  pill: 'pill-green',  label: 'Em dia',   cor: 'var(--green)' };
 }
@@ -260,7 +260,8 @@ function renderApp(data) {
       <div class="metric"><div class="metric-val val-green">${ok}</div><div class="metric-label">Em dia</div></div>
     </div>
 
-    ${grupo('🔴 Vencidas / Críticas', certs.filter(c => c.dias <= 5), 0)}
+    ${grupo('🔴 Vencidas', certs.filter(c => c.dias < 0), 0)}
+    ${grupo('🟠 Crítico — vencem em até 5 dias', certs.filter(c => c.dias >= 0 && c.dias <= 5), 1)}
     ${grupo('🔵 Atenção — vencem em até 15 dias', certs.filter(c => c.dias > 5 && c.dias <= 15), 3)}
     ${grupo('🟢 Em dia', certs.filter(c => c.dias > 15), 5)}
 
