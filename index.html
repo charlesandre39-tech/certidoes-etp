@@ -187,8 +187,8 @@ function renderApp(data) {
 
   const vencidas = certs.filter(c => c.dias < 0).length;
   const criticas = certs.filter(c => c.dias >= 0 && c.dias <= 5).length;
-  const atencao  = certs.filter(c => c.dias > 5 && c.dias <= 30).length;
-  const ok       = certs.filter(c => c.dias > 30).length;
+  const atencao  = certs.filter(c => c.dias > 5 && c.dias <= 15).length;
+  const ok       = certs.filter(c => c.dias > 15).length;
 
   const score = Math.round((ok / certs.length) * 100);
   const circ = 2 * Math.PI * 30;
@@ -252,13 +252,13 @@ function renderApp(data) {
     <div class="metrics">
       <div class="metric"><div class="metric-val val-red">${vencidas}</div><div class="metric-label">Vencidas</div></div>
       <div class="metric"><div class="metric-val val-orange">${criticas}</div><div class="metric-label">Crítico ≤5d</div></div>
-      <div class="metric"><div class="metric-val val-blue">${atencao}</div><div class="metric-label">Atenção ≤30d</div></div>
+      <div class="metric"><div class="metric-val val-blue">${atencao}</div><div class="metric-label">Atenção ≤15d</div></div>
       <div class="metric"><div class="metric-val val-green">${ok}</div><div class="metric-label">Em dia</div></div>
     </div>
 
     ${grupo('🔴 Vencidas / Críticas', certs.filter(c => c.dias <= 5), 0)}
-    ${grupo('🟡 Atenção — vencem em até 30 dias', certs.filter(c => c.dias > 5 && c.dias <= 30), 3)}
-    ${grupo('🟢 Em dia', certs.filter(c => c.dias > 30), 5)}
+    ${grupo('🟡 Atenção — vencem em até 15 dias', certs.filter(c => c.dias > 5 && c.dias <= 15), 3)}
+    ${grupo('🟢 Em dia', certs.filter(c => c.dias > 15), 5)}
 
     <div class="footer">
       <div class="footer-path">📁 Certidões_\\ · OneDrive</div>
