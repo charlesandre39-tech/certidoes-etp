@@ -1,7 +1,7 @@
 {
   "empresa": "ETP Consultoria e Assessoria",
-  "atualizado": "2026-06-18",
-  "gerado_em": "18/06/2026 08:00",
+  "atualizado": "2026-06-19",
+  "gerado_em": "19/06/2026 17:13",
   "certidoes": [
     {
       "nome": "Certidões Válidas até",
@@ -10,28 +10,22 @@
       "arquivo": "Certidões Válidas até 03-06-2026.pdf"
     },
     {
+      "nome": "CND FGTS",
+      "orgao": "Caixa Econômica Federal",
+      "vencimento": "2026-07-07",
+      "arquivo": "CND FGTS 07-07-2026.pdf"
+    },
+    {
       "nome": "CND FALÊNCIA",
       "orgao": "Junta Comercial",
-      "vencimento": "2026-06-03",
-      "arquivo": "CND FALÊNCIA 03-06-2026.pdf"
+      "vencimento": "2026-07-18",
+      "arquivo": "CND FALÊNCIA 18-07-2026.pdf"
     },
     {
       "nome": "CND SEFAZ",
       "orgao": "Secretaria de Fazenda",
-      "vencimento": "2026-06-03",
-      "arquivo": "CND SEFAZ 03-06-2026.pdf"
-    },
-    {
-      "nome": "CND FGTS",
-      "orgao": "Caixa Econômica Federal",
-      "vencimento": "2026-06-11",
-      "arquivo": "CND FGTS 11-06-2026.pdf"
-    },
-    {
-      "nome": "CND TRABALHISTA",
-      "orgao": "TST",
-      "vencimento": "2026-06-12",
-      "arquivo": "CND TRABALHISTA 12-06-2026.pdf"
+      "vencimento": "2026-07-18",
+      "arquivo": "CND SEFAZ 18-07-2026.pdf"
     },
     {
       "nome": "CND PREFEITURA",
@@ -44,6 +38,12 @@
       "orgao": "Receita Federal",
       "vencimento": "2026-09-27",
       "arquivo": "CND RECEITA FEDERAL 27-09-2026.pdf"
+    },
+    {
+      "nome": "CND TRABALHISTA",
+      "orgao": "TST",
+      "vencimento": "2026-12-15",
+      "arquivo": "CND TRABALHISTA 15-12-2026.pdf"
     }
   ]
 }
