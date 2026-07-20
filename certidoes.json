@@ -1,49 +1,862 @@
 {
-  "empresa": "ETP Consultoria e Assessoria",
-  "atualizado": "2026-07-20",
-  "gerado_em": "20/07/2026 08:00",
-  "certidoes": [
+  "empresas": [
     {
-      "nome": "Certidões Válidas até",
-      "orgao": "—",
-      "vencimento": "2026-07-31",
-      "arquivo": "Certidões Válidas até 31-07-2026.pdf"
+      "id": "etp",
+      "nome": "ETP Consultoria e Assessoria",
+      "certidoes": [
+        {
+          "nome": "CERTIDÕES VÁLIDAS ATÉ",
+          "orgao": "—",
+          "vencimento": "2026-07-31",
+          "emissao": "2026-07-01",
+          "arquivo": "Certidões Válidas até 31-07-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "",
+            "comprovar": ""
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-07-31",
+          "emissao": "2026-07-01",
+          "arquivo": "CND FGTS 31-07-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND PREFEITURA",
+          "orgao": "Prefeitura Municipal",
+          "vencimento": "2026-07-31",
+          "emissao": "2026-02-01",
+          "arquivo": "CND PREFEITURA 31-07-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
+            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2026-08-18",
+          "emissao": "2026-07-19",
+          "arquivo": "CND FALÊNCIA 18-08-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2026-08-18",
+          "emissao": "2026-07-19",
+          "arquivo": "CND SEFAZ 18-08-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND RECEITA FEDERAL",
+          "orgao": "Receita Federal",
+          "vencimento": "2026-09-27",
+          "emissao": "2026-03-31",
+          "arquivo": "CND RECEITA FEDERAL 27-09-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
+            "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
+          }
+        },
+        {
+          "nome": "CND TRABALHISTA",
+          "orgao": "TST",
+          "vencimento": "2026-12-15",
+          "emissao": "2026-06-18",
+          "arquivo": "CND TRABALHISTA 15-12-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://www.tst.jus.br/certidao",
+            "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        }
+      ],
+      "historico": [
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-02-10",
+          "emissao": "2025-01-11",
+          "arquivo": "CND FGTS 10-02-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2025-02-22",
+          "emissao": "2025-01-23",
+          "arquivo": "CND SEFAZ 22-02-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2025-02-23",
+          "emissao": "2025-01-24",
+          "arquivo": "CND FALÊNCIA 23-02-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND TRABALHISTA",
+          "orgao": "TST",
+          "vencimento": "2025-04-16",
+          "emissao": "2024-10-18",
+          "arquivo": "CND TRABALHISTA 16-04-2025.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://www.tst.jus.br/certidao",
+            "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        },
+        {
+          "nome": "CND PREFEITURA",
+          "orgao": "Prefeitura Municipal",
+          "vencimento": "2025-04-23",
+          "emissao": "2024-10-25",
+          "arquivo": "CND PREFEITURA 23-04-2025.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
+            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-04-27",
+          "emissao": "2025-03-28",
+          "arquivo": "CND FGTS 27-04-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2025-05-08",
+          "emissao": "2025-04-08",
+          "arquivo": "CND SEFAZ 08-05-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2025-05-12",
+          "emissao": "2025-04-12",
+          "arquivo": "CND FALÊNCIA 12-05-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-06-04",
+          "emissao": "2025-05-05",
+          "arquivo": "CND FGTS 04-06-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2025-06-15",
+          "emissao": "2025-05-16",
+          "arquivo": "CND SEFAZ 15-06-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2025-06-16",
+          "emissao": "2025-05-17",
+          "arquivo": "CND FALÊNCIA 16-06-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-06-23",
+          "emissao": "2025-05-24",
+          "arquivo": "CND FGTS 23-06-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-07-12",
+          "emissao": "2025-06-12",
+          "arquivo": "CND FGTS 12-07-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CERTIDÕES VÁLIDAS ATÉ",
+          "orgao": "—",
+          "vencimento": "2025-07-16",
+          "emissao": "2025-06-16",
+          "arquivo": "Certidões Válidas até 16-07-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "",
+            "comprovar": ""
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2025-07-16",
+          "emissao": "2025-06-16",
+          "arquivo": "CND FALÊNCIA 16-07-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2025-07-16",
+          "emissao": "2025-06-16",
+          "arquivo": "CND SEFAZ 16-07-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND RECEITA FEDERAL",
+          "orgao": "Receita Federal",
+          "vencimento": "2025-07-22",
+          "emissao": "2025-01-23",
+          "arquivo": "CND RECEITA FEDERAL 22-07-2025.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
+            "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
+          }
+        },
+        {
+          "nome": "CND PREFEITURA",
+          "orgao": "Prefeitura Municipal",
+          "vencimento": "2025-07-29",
+          "emissao": "2025-01-30",
+          "arquivo": "CND PREFEITURA 29-07-2025.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
+            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-07-31",
+          "emissao": "2025-07-01",
+          "arquivo": "CND FGTS 31-07-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-08-19",
+          "emissao": "2025-07-20",
+          "arquivo": "CND FGTS 19-08-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2025-09-02",
+          "emissao": "2025-08-03",
+          "arquivo": "CND FALÊNCIA 02-09-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2025-09-02",
+          "emissao": "2025-08-03",
+          "arquivo": "CND SEFAZ 02-09-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND TRABALHISTA",
+          "orgao": "TST",
+          "vencimento": "2025-09-06",
+          "emissao": "2025-03-10",
+          "arquivo": "CND TRABALHISTA 06-09-2025.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://www.tst.jus.br/certidao",
+            "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-09-07",
+          "emissao": "2025-08-08",
+          "arquivo": "CND FGTS 07-09-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-09-26",
+          "emissao": "2025-08-27",
+          "arquivo": "CND FGTS 26-09-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2025-10-02",
+          "emissao": "2025-09-02",
+          "arquivo": "CND FALÊNCIA 02-10-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2025-10-02",
+          "emissao": "2025-09-02",
+          "arquivo": "CND SEFAZ 02-10-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-10-17",
+          "emissao": "2025-09-17",
+          "arquivo": "CND FGTS 17-10-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND RECEITA FEDERAL",
+          "orgao": "Receita Federal",
+          "vencimento": "2025-10-27",
+          "emissao": "2025-04-30",
+          "arquivo": "CND RECEITA FEDERAL 27-10-2025.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
+            "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2025-10-30",
+          "emissao": "2025-09-30",
+          "arquivo": "CND FALÊNCIA 30-10-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2025-10-30",
+          "emissao": "2025-09-30",
+          "arquivo": "CND SEFAZ 30-10-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2025-11-05",
+          "emissao": "2025-10-06",
+          "arquivo": "CND FGTS 05-11-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2025-12-04",
+          "emissao": "2025-11-04",
+          "arquivo": "CND FALÊNCIA 04-12-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2025-12-04",
+          "emissao": "2025-11-04",
+          "arquivo": "CND SEFAZ 04-12-2025.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND TRABALHISTA",
+          "orgao": "TST",
+          "vencimento": "2025-12-19",
+          "emissao": "2025-06-22",
+          "arquivo": "CND TRABALHISTA 19-12-2025.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://www.tst.jus.br/certidao",
+            "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-01-04",
+          "emissao": "2025-12-05",
+          "arquivo": "CND FGTS 04-01-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2026-01-13",
+          "emissao": "2025-12-14",
+          "arquivo": "CND FALÊNCIA 13-01-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2026-01-13",
+          "emissao": "2025-12-14",
+          "arquivo": "CND SEFAZ 13-01-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-01-24",
+          "emissao": "2025-12-25",
+          "arquivo": "CND FGTS 24-01-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND PREFEITURA",
+          "orgao": "Prefeitura Municipal",
+          "vencimento": "2026-01-28",
+          "emissao": "2025-08-01",
+          "arquivo": "CND PREFEITURA 28-01-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
+            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-02-12",
+          "emissao": "2026-01-13",
+          "arquivo": "CND FGTS 12-02-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2026-03-03",
+          "emissao": "2026-02-01",
+          "arquivo": "CND FALÊNCIA 03-03-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2026-03-03",
+          "emissao": "2026-02-01",
+          "arquivo": "CND SEFAZ 03-03-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND RECEITA FEDERAL",
+          "orgao": "Receita Federal",
+          "vencimento": "2026-03-21",
+          "emissao": "2025-09-22",
+          "arquivo": "CND RECEITA FEDERAL 21-03-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
+            "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-03-24",
+          "emissao": "2026-02-22",
+          "arquivo": "CND FGTS 24-03-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND RECEITA FEDERAL",
+          "orgao": "Receita Federal",
+          "vencimento": "2026-03-30",
+          "emissao": "2025-10-01",
+          "arquivo": "CND RECEITA FEDERAL 30-03-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
+            "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2026-05-01",
+          "emissao": "2026-04-01",
+          "arquivo": "CND FALÊNCIA 01-05-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-05-01",
+          "emissao": "2026-04-01",
+          "arquivo": "CND FGTS 01-05-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2026-05-01",
+          "emissao": "2026-04-01",
+          "arquivo": "CND SEFAZ 01-05-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-05-20",
+          "emissao": "2026-04-20",
+          "arquivo": "CND FGTS 20-05-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2026-06-03",
+          "emissao": "2026-05-04",
+          "arquivo": "CND FALÊNCIA 03-06-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2026-06-03",
+          "emissao": "2026-05-04",
+          "arquivo": "CND SEFAZ 03-06-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-06-11",
+          "emissao": "2026-05-12",
+          "arquivo": "CND FGTS 11-06-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND TRABALHISTA",
+          "orgao": "TST",
+          "vencimento": "2026-06-12",
+          "emissao": "2025-12-14",
+          "arquivo": "CND TRABALHISTA 12-06-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://www.tst.jus.br/certidao",
+            "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-07-07",
+          "emissao": "2026-06-07",
+          "arquivo": "CND FGTS 07-07-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2026-07-18",
+          "emissao": "2026-06-18",
+          "arquivo": "CND FALÊNCIA 18-07-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2026-07-18",
+          "emissao": "2026-06-18",
+          "arquivo": "CND SEFAZ 18-07-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        }
+      ]
     },
     {
-      "nome": "CND FGTS",
-      "orgao": "Caixa Econômica Federal",
-      "vencimento": "2026-07-31",
-      "arquivo": "CND FGTS 31-07-2026.pdf"
-    },
-    {
-      "nome": "CND PREFEITURA",
-      "orgao": "Prefeitura Municipal",
-      "vencimento": "2026-07-31",
-      "arquivo": "CND PREFEITURA 31-07-2026.pdf"
-    },
-    {
-      "nome": "CND FALÊNCIA",
-      "orgao": "Junta Comercial",
-      "vencimento": "2026-08-18",
-      "arquivo": "CND FALÊNCIA 18-08-2026.pdf"
-    },
-    {
-      "nome": "CND SEFAZ",
-      "orgao": "Secretaria de Fazenda",
-      "vencimento": "2026-08-18",
-      "arquivo": "CND SEFAZ 18-08-2026.pdf"
-    },
-    {
-      "nome": "CND RECEITA FEDERAL",
-      "orgao": "Receita Federal",
-      "vencimento": "2026-09-27",
-      "arquivo": "CND RECEITA FEDERAL 27-09-2026.pdf"
-    },
-    {
-      "nome": "CND TRABALHISTA",
-      "orgao": "TST",
-      "vencimento": "2026-12-15",
-      "arquivo": "CND TRABALHISTA 15-12-2026.pdf"
+      "id": "vetra",
+      "nome": "Vetra Norte Engenharia",
+      "certidoes": [
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2026-08-01",
+          "emissao": "2026-07-02",
+          "arquivo": "CND SEFAZ 01-08-2026-vetra.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Junta Comercial",
+          "vencimento": "2026-08-02",
+          "emissao": "2026-07-03",
+          "arquivo": "CND FALÊNCIA 02-08-2026-vetra.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+            "comprovar": "https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
+          }
+        },
+        {
+          "nome": "CND TRABALHISTA",
+          "orgao": "TST",
+          "vencimento": "2026-12-29",
+          "emissao": "2026-07-02",
+          "arquivo": "CND TRABALHISTA 29-12-2026-vetra.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://www.tst.jus.br/certidao",
+            "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        },
+        {
+          "nome": "CND PREFEITURA",
+          "orgao": "Prefeitura Municipal",
+          "vencimento": "2026-12-29",
+          "emissao": "2026-07-02",
+          "arquivo": "CND PREFEITURA 29-12-2026-vetra.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
+            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
+          }
+        },
+        {
+          "nome": "CND RECEITA FEDERAL",
+          "orgao": "Receita Federal",
+          "vencimento": "2026-12-29",
+          "emissao": "2026-07-02",
+          "arquivo": "CND RECEITA FEDERAL 29-12-2026-vetra.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
+            "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
+          }
+        }
+      ],
+      "historico": [
+        {
+          "nome": "CND TRABALHISTA",
+          "orgao": "TST",
+          "vencimento": "2027-01-12",
+          "emissao": "2026-07-16",
+          "arquivo": "CND TRABALHISTA 12-01-2027-vetra.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://www.tst.jus.br/certidao",
+            "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        }
+      ]
     }
-  ]
+  ],
+  "atualizado": "2026-07-20",
+  "gerado_em": "20/07/2026 11:00"
 }
