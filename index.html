@@ -3,190 +3,136 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Certidões — ETP Consultoria</title>
+<title>Certidões — ETP · Vetra Norte</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0e0f11;
-    --surface: #16181c;
-    --border: #252830;
-    --text: #e8eaf0;
-    --muted: #5a5f6e;
-    --accent: #c8f060;
-    --red: #ff5e5e;
-    --orange: #ffaa3c;
-    --green: #60f0a8;
-    --blue: #60c8f0;
-    --red-bg: rgba(255,94,94,0.08);
-    --orange-bg: rgba(255,170,60,0.08);
-    --green-bg: rgba(96,240,168,0.08);
-    --blue-bg: rgba(96,200,240,0.08);
+    --bg: #0e0f11; --surface: #16181c; --border: #252830; --text: #e8eaf0;
+    --muted: #5a5f6e; --accent: #c8f060;
+    --red: #ff5e5e; --orange: #ffaa3c; --green: #60f0a8; --blue: #60c8f0;
+    --red-bg: rgba(255,94,94,0.08); --orange-bg: rgba(255,170,60,0.08);
+    --green-bg: rgba(96,240,168,0.08); --blue-bg: rgba(96,200,240,0.08);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Syne', sans-serif;
-    min-height: 100vh;
-    padding: 0;
-  }
-
-  /* Grid background */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(200,240,96,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(200,240,96,0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  .wrap { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
-
-  /* Header */
-  .header { margin-bottom: 48px; }
-  .header-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  .logo-area { }
+  body { background: var(--bg); color: var(--text); font-family: 'Syne', sans-serif; min-height: 100vh; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(200,240,96,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(200,240,96,0.03) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+  .header { margin-bottom: 32px; }
   .tag { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; }
-  h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 800; line-height: 1.1; color: var(--text); }
+  h1 { font-size: clamp(24px, 4vw, 36px); font-weight: 800; line-height: 1.1; }
   h1 span { color: var(--accent); }
-  .updated { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 10px; }
+  .updated { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 8px; }
 
-  /* Score ring */
-  .score-ring { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
-  .ring-wrap { position: relative; width: 80px; height: 80px; }
-  .ring-wrap svg { transform: rotate(-90deg); }
-  .ring-track { fill: none; stroke: var(--border); stroke-width: 6; }
-  .ring-fill { fill: none; stroke-width: 6; stroke-linecap: round; transition: stroke-dashoffset 1s ease; }
-  .ring-label { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-  .ring-num { font-size: 20px; font-weight: 700; line-height: 1; }
-  .ring-sub { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
-  .score-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-align: center; }
+  .company-tabs { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .tab { padding: 8px 20px; border-radius: 8px; border: 0.5px solid var(--border); font-size: 13px; font-weight: 500; cursor: pointer; color: var(--muted); background: transparent; font-family: 'Syne', sans-serif; transition: all 0.15s; }
+  .tab.active { background: var(--surface); color: var(--accent); border-color: var(--accent); }
 
-  /* Metrics strip */
-  .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 40px; }
-  .metric { background: var(--surface); padding: 20px 16px; }
-  .metric-val { font-size: 32px; font-weight: 700; line-height: 1; }
-  .metric-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; }
-  .val-red { color: var(--red); }
-  .val-orange { color: var(--orange); }
-  .val-green { color: var(--green); }
-  .val-blue { color: var(--blue); }
+  .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; }
+  .metric { background: var(--surface); padding: 16px; }
+  .metric-val { font-size: 28px; font-weight: 700; line-height: 1; }
+  .metric-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
 
-  /* Section label */
-  .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--muted);
-    margin-bottom: 12px;
-    margin-top: 32px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+  .section-label { font-family: 'DM Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 10px; margin-top: 28px; display: flex; align-items: center; gap: 8px; }
   .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-  /* Cert cards */
-  .cert-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 8px;
-    border-left: 3px solid transparent;
-    transition: transform 0.15s ease, border-color 0.15s ease;
-    animation: fadeUp 0.4s ease both;
-  }
+  .cert-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; margin-bottom: 8px; border-left: 3px solid transparent; transition: transform 0.15s; animation: fadeUp 0.4s ease both; }
   .cert-card:hover { transform: translateX(4px); }
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .cert-card.red  { border-left-color: var(--red);    background: color-mix(in srgb, var(--surface) 96%, var(--red)); }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .cert-card.red    { border-left-color: var(--red);    background: color-mix(in srgb, var(--surface) 96%, var(--red)); }
   .cert-card.orange { border-left-color: var(--orange); background: color-mix(in srgb, var(--surface) 96%, var(--orange)); }
-  .cert-card.green  { border-left-color: var(--green);  background: color-mix(in srgb, var(--surface) 96%, var(--green)); }
   .cert-card.blue   { border-left-color: var(--blue);   background: color-mix(in srgb, var(--surface) 96%, var(--blue)); }
+  .cert-card.green  { border-left-color: var(--green);  background: color-mix(in srgb, var(--surface) 96%, var(--green)); }
 
   .cert-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .dot-red    { background: var(--red);    box-shadow: 0 0 8px var(--red); }
   .dot-orange { background: var(--orange); box-shadow: 0 0 8px var(--orange); }
-  .dot-green  { background: var(--green);  box-shadow: 0 0 8px var(--green); }
   .dot-blue   { background: var(--blue);   box-shadow: 0 0 8px var(--blue); }
+  .dot-green  { background: var(--green);  box-shadow: 0 0 8px var(--green); }
 
   .cert-info { flex: 1; min-width: 0; }
-  .cert-name { font-size: 15px; font-weight: 600; }
+  .cert-name { font-size: 14px; font-weight: 600; }
   .cert-org  { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 2px; }
-
-  .cert-right { text-align: right; flex-shrink: 0; }
-  .cert-dias  { font-size: 22px; font-weight: 700; line-height: 1; }
-  .cert-dias-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 2px; }
-  .cert-date { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 4px; }
-
   .pill { display: inline-block; font-family: 'DM Mono', monospace; font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px; }
   .pill-red    { background: var(--red-bg);    color: var(--red); }
   .pill-orange { background: var(--orange-bg); color: var(--orange); }
-  .pill-green  { background: var(--green-bg);  color: var(--green); }
   .pill-blue   { background: var(--blue-bg);   color: var(--blue); }
+  .pill-green  { background: var(--green-bg);  color: var(--green); }
 
-  /* Footer */
-  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-  .footer-path { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); }
-  .footer-brand { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); }
+  .cert-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .cert-dias { text-align: right; }
+  .dias-num { font-size: 20px; font-weight: 700; line-height: 1; }
+  .dias-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 2px; }
+  .cert-date { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 3px; }
 
-  /* Loading */
+  .btn-group { display: flex; gap: 4px; }
+  .btn-emit, .btn-check { font-family: 'DM Mono', monospace; font-size: 11px; padding: 5px 10px; border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 4px; white-space: nowrap; text-decoration: none; transition: all 0.15s; }
+  .btn-emit  { border: 0.5px solid var(--border); background: transparent; color: var(--muted); }
+  .btn-emit:hover  { background: var(--border); color: var(--text); }
+  .btn-check { border: 0.5px solid rgba(96,200,240,0.4); background: transparent; color: var(--blue); }
+  .btn-check:hover { background: var(--blue-bg); }
+
+  .gantt-section { margin-top: 3rem; }
+  .gantt-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 10px; }
+  .gantt-title { font-size: 14px; font-weight: 600; color: var(--text); }
+  .gantt-controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .gantt-controls select, .gantt-controls input { font-family: 'DM Mono', monospace; font-size: 11px; background: var(--surface); color: var(--text); border: 0.5px solid var(--border); border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+  .gantt-controls label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  .gantt-chart { margin-top: 1rem; }
+  .gantt-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .gantt-label { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); width: 120px; flex-shrink: 0; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .gantt-track { flex: 1; height: 22px; background: var(--surface); border-radius: 4px; position: relative; overflow: visible; }
+  .gantt-bar { position: absolute; height: 100%; border-radius: 4px; opacity: 0.85; }
+  .gantt-gap { position: absolute; height: 100%; background: rgba(255,94,94,0.12); border: 0.5px dashed rgba(255,94,94,0.5); border-radius: 2px; }
+  .gantt-today { position: absolute; top: -6px; bottom: -6px; width: 1.5px; background: var(--orange); z-index: 10; }
+  .gantt-today-label { position: absolute; top: -20px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--orange); white-space: nowrap; transform: translateX(-50%); }
+  .gantt-axis { display: flex; margin-left: 130px; margin-top: 8px; }
+  .gantt-axis-label { flex: 1; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-align: center; }
+  .gantt-legend { display: flex; gap: 16px; margin-top: 12px; margin-left: 130px; flex-wrap: wrap; }
+  .gantt-legend-item { display: flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); }
+  .gantt-legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+
+  .footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); flex-wrap: wrap; gap: 8px; }
   #loading { text-align: center; padding: 80px 0; }
   .spinner { width: 32px; height: 32px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
   @keyframes spin { to { transform: rotate(360deg); } }
-
   @media (max-width: 600px) {
     .metrics { grid-template-columns: repeat(2, 1fr); }
-    .cert-card { flex-wrap: wrap; }
-    .cert-right { text-align: left; }
+    .btn-group { flex-direction: column; }
+    .cert-right { flex-direction: column; align-items: flex-end; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div id="loading">
-    <div class="spinner"></div>
-    <p style="font-family:'DM Mono',monospace;font-size:12px;color:var(--muted)">Carregando certidões...</p>
-  </div>
+  <div id="loading"><div class="spinner"></div><p style="font-family:'DM Mono',monospace;font-size:12px;color:var(--muted)">Carregando certidões...</p></div>
   <div id="app" style="display:none"></div>
 </div>
-
 <script>
-const hoje = new Date();
-hoje.setHours(0,0,0,0);
+const hoje = new Date(); hoje.setHours(0,0,0,0);
 
-function diasRestantes(vencStr) {
-  const [y,m,d] = vencStr.split('-').map(Number);
-  const venc = new Date(y, m-1, d);
-  return Math.ceil((venc - hoje) / 86400000);
+function diasRestantes(v) {
+  const [y,m,d] = v.split('-').map(Number);
+  return Math.ceil((new Date(y,m-1,d) - hoje) / 86400000);
 }
-
-function fmtData(vencStr) {
-  const [y,m,d] = vencStr.split('-').map(Number);
+function fmtData(v) {
+  const [y,m,d] = v.split('-').map(Number);
   return `${String(d).padStart(2,'0')}/${String(m).padStart(2,'0')}/${y}`;
 }
-
 function statusInfo(dias) {
-  if (dias < 0)  return { cls: 'red',    dot: 'dot-red',    pill: 'pill-red',    label: 'Vencida',  cor: 'var(--red)' };
-  if (dias <= 5) return { cls: 'orange', dot: 'dot-orange', pill: 'pill-orange', label: 'Crítico',  cor: 'var(--orange)' };
-  if (dias <= 15) return { cls: 'blue', dot: 'dot-blue', pill: 'pill-blue', label: 'Atenção',  cor: 'var(--blue)' };
-  return             { cls: 'green',  dot: 'dot-green',  pill: 'pill-green',  label: 'Em dia',   cor: 'var(--green)' };
+  if (dias < 0)   return { cls:'red',    dot:'dot-red',    pill:'pill-red',    label:'Vencida',  cor:'var(--red)' };
+  if (dias <= 5)  return { cls:'orange', dot:'dot-orange', pill:'pill-orange', label:'Crítico',  cor:'var(--orange)' };
+  if (dias <= 15) return { cls:'blue',   dot:'dot-blue',   pill:'pill-blue',   label:'Atenção',  cor:'var(--blue)' };
+  return               { cls:'green',  dot:'dot-green',  pill:'pill-green',  label:'Em dia',   cor:'var(--green)' };
 }
 
-function renderApp(data) {
-  const certs = data.certidoes.map(c => ({ ...c, dias: diasRestantes(c.vencimento) }));
+let dadosGlobais = null;
+let empresaAtiva = 0;
+let ganttFiltro = { certidao: 'todas', inicio: null, fim: null };
+
+function renderEmpresa(emp) {
+  const certs = emp.certidoes.map(c => ({...c, dias: diasRestantes(c.vencimento)}));
   certs.sort((a,b) => a.dias - b.dias);
 
   const vencidas = certs.filter(c => c.dias < 0).length;
@@ -194,93 +140,203 @@ function renderApp(data) {
   const atencao  = certs.filter(c => c.dias > 5 && c.dias <= 15).length;
   const ok       = certs.filter(c => c.dias > 15).length;
 
-  const score = Math.round((ok / certs.length) * 100);
-  const circ = 2 * Math.PI * 30;
-  const scoreColor = score >= 80 ? 'var(--green)' : score >= 50 ? 'var(--orange)' : 'var(--red)';
-
-  const dataAtual = hoje.toLocaleDateString('pt-BR', { day:'2-digit', month:'long', year:'numeric' });
-  const atualizado = data.atualizado ? new Date(data.atualizado + 'T12:00:00').toLocaleDateString('pt-BR') : '—';
-
-  function grupo(titulo, lista, delay) {
-    if (!lista.length) return '';
-    const cards = lista.map((c, i) => {
-      const s = statusInfo(c.dias);
-      const diasLabel = c.dias < 0 ? `${Math.abs(c.dias)}d` : `${c.dias}d`;
-      const diasSub   = c.dias < 0 ? 'atrás' : c.dias === 0 ? 'hoje!' : 'restantes';
-      return `
-        <div class="cert-card ${s.cls}" style="animation-delay:${(delay+i)*0.06}s">
-          <div class="cert-dot ${s.dot}"></div>
-          <div class="cert-info">
-            <div class="cert-name">${c.nome}</div>
-            <div class="cert-org">${c.orgao}</div>
-            <span class="pill ${s.pill}">${s.label}</span>
-          </div>
-          <div class="cert-right">
-            <div class="cert-dias" style="color:${s.cor}">${diasLabel}</div>
-            <div class="cert-dias-label">${diasSub}</div>
-            <div class="cert-date">${fmtData(c.vencimento)}</div>
-          </div>
-        </div>`;
-    }).join('');
-    return `<div class="section-label">${titulo}</div>${cards}`;
+  function card(c, i) {
+    const s = statusInfo(c.dias);
+    const dl = c.dias < 0 ? `${Math.abs(c.dias)}d` : `${c.dias}d`;
+    const ds = c.dias < 0 ? 'atrás' : c.dias === 0 ? 'hoje!' : 'restantes';
+    const emitir = c.links?.emitir ? `<a class="btn-emit" href="${c.links.emitir}" target="_blank" rel="noopener">↗ Emitir</a>` : '';
+    const comprovar = c.links?.comprovar ? `<a class="btn-check" href="${c.links.comprovar}" target="_blank" rel="noopener">✓ Comprovar</a>` : '';
+    return `<div class="cert-card ${s.cls}" style="animation-delay:${i*0.05}s">
+      <div class="cert-dot ${s.dot}"></div>
+      <div class="cert-info">
+        <div class="cert-name">${c.nome}</div>
+        <div class="cert-org">${c.orgao}</div>
+        <span class="pill ${s.pill}">${s.label}</span>
+      </div>
+      <div class="cert-right">
+        <div class="cert-dias">
+          <div class="dias-num" style="color:${s.cor}">${dl}</div>
+          <div class="dias-label">${ds}</div>
+          <div class="cert-date">${fmtData(c.vencimento)}</div>
+        </div>
+        <div class="btn-group">${emitir}${comprovar}</div>
+      </div>
+    </div>`;
   }
+
+  function grupo(titulo, lista, offset) {
+    if (!lista.length) return '';
+    return `<div class="section-label">${titulo}</div>` + lista.map((c,i) => card(c, offset+i)).join('');
+  }
+
+  return `
+    <div class="metrics">
+      <div class="metric"><div class="metric-val" style="color:var(--red)">${vencidas}</div><div class="metric-label">Vencidas</div></div>
+      <div class="metric"><div class="metric-val" style="color:var(--orange)">${criticas}</div><div class="metric-label">Crítico ≤5d</div></div>
+      <div class="metric"><div class="metric-val" style="color:var(--blue)">${atencao}</div><div class="metric-label">Atenção ≤15d</div></div>
+      <div class="metric"><div class="metric-val" style="color:var(--green)">${ok}</div><div class="metric-label">Em dia</div></div>
+    </div>
+    ${grupo('🔴 Vencidas', certs.filter(c=>c.dias<0), 0)}
+    ${grupo('🟠 Crítico — vencem em até 5 dias', certs.filter(c=>c.dias>=0&&c.dias<=5), 2)}
+    ${grupo('🔵 Atenção — vencem em até 15 dias', certs.filter(c=>c.dias>5&&c.dias<=15), 4)}
+    ${grupo('🟢 Em dia', certs.filter(c=>c.dias>15), 6)}
+  `;
+}
+
+function renderGantt(emp) {
+  const todas = [...emp.certidoes, ...emp.historico];
+  const nomes = [...new Set(todas.map(c=>c.nome))].sort();
+
+  // Aplicar filtro de certidão
+  const filtrado = ganttFiltro.certidao === 'todas' ? todas : todas.filter(c=>c.nome===ganttFiltro.certidao);
+
+  // Calcular range de datas
+  let minD = ganttFiltro.inicio ? new Date(ganttFiltro.inicio) : null;
+  let maxD = ganttFiltro.fim   ? new Date(ganttFiltro.fim)   : null;
+  if (!minD || !maxD) {
+    filtrado.forEach(c => {
+      const e = new Date(c.emissao), v = new Date(c.vencimento);
+      if (!minD || e < minD) minD = e;
+      if (!maxD || v > maxD) maxD = v;
+    });
+  }
+  if (!minD) minD = new Date(hoje.getFullYear(), 0, 1);
+  if (!maxD) maxD = new Date(hoje.getFullYear(), 11, 31);
+
+  const totalMs = maxD - minD;
+  const pct = d => Math.max(0, Math.min(100, (new Date(d) - minD) / totalMs * 100));
+  const todayPct = pct(hoje);
+
+  // Agrupar por nome
+  const grupos = {};
+  filtrado.forEach(c => {
+    if (!grupos[c.nome]) grupos[c.nome] = [];
+    grupos[c.nome].push(c);
+  });
+
+  let rows = '';
+  Object.entries(grupos).forEach(([nome, items]) => {
+    items.sort((a,b) => a.emissao.localeCompare(b.emissao));
+    let barras = '';
+    for (let i = 0; i < items.length; i++) {
+      const c = items[i];
+      const s = pct(c.emissao);
+      const e = pct(c.vencimento);
+      const w = Math.max(0.5, e - s);
+      const dias = diasRestantes(c.vencimento);
+      let cor = '#60f0a8';
+      if (new Date(c.vencimento) < hoje) cor = '#5a5f6e';
+      else if (dias <= 5)  cor = '#ffaa3c';
+      else if (dias <= 15) cor = '#60c8f0';
+      barras += `<div class="gantt-bar" style="left:${s}%;width:${w}%;background:${cor}" title="${c.nome}: ${fmtData(c.emissao)} → ${fmtData(c.vencimento)}"></div>`;
+
+      // Lacuna
+      if (i < items.length - 1) {
+        const fimAtual = new Date(c.vencimento);
+        const inicioProx = new Date(items[i+1].emissao);
+        if (inicioProx > fimAtual) {
+          const gs = pct(fimAtual);
+          const ge = pct(inicioProx);
+          if (ge > gs) barras += `<div class="gantt-gap" style="left:${gs}%;width:${ge-gs}%" title="Lacuna: ${Math.round((inicioProx-fimAtual)/86400000)} dias sem cobertura"></div>`;
+        }
+      }
+    }
+
+    rows += `<div class="gantt-row">
+      <div class="gantt-label" title="${nome}">${nome}</div>
+      <div class="gantt-track">
+        <div class="gantt-today" style="left:${todayPct}%"><div class="gantt-today-label">hoje</div></div>
+        ${barras}
+      </div>
+    </div>`;
+  });
+
+  // Eixo de meses
+  const meses = [];
+  let cur = new Date(minD.getFullYear(), minD.getMonth(), 1);
+  while (cur <= maxD) {
+    meses.push(cur.toLocaleDateString('pt-BR', {month:'short', year:'2-digit'}));
+    cur = new Date(cur.getFullYear(), cur.getMonth()+1, 1);
+  }
+
+  const selectOpts = ['<option value="todas">Todas as certidões</option>', ...nomes.map(n => `<option value="${n}" ${ganttFiltro.certidao===n?'selected':''}>${n}</option>`)].join('');
+  const iniVal = ganttFiltro.inicio || minD.toISOString().slice(0,10);
+  const fimVal = ganttFiltro.fim    || maxD.toISOString().slice(0,10);
+
+  return `
+    <div class="gantt-section">
+      <div class="gantt-header">
+        <div class="gantt-title">Gantt de vigência — ${emp.nome}</div>
+        <div class="gantt-controls">
+          <label>Certidão</label>
+          <select onchange="setGanttFiltro('certidao', this.value)">${selectOpts}</select>
+          <label>De</label>
+          <input type="date" value="${iniVal}" onchange="setGanttFiltro('inicio', this.value)">
+          <label>Até</label>
+          <input type="date" value="${fimVal}" onchange="setGanttFiltro('fim', this.value)">
+        </div>
+      </div>
+      <div class="gantt-chart">${rows}</div>
+      <div class="gantt-axis">${meses.map(m=>`<div class="gantt-axis-label">${m}</div>`).join('')}</div>
+      <div class="gantt-legend">
+        <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:#60f0a8"></div>Em dia</div>
+        <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:#ffaa3c"></div>Crítico</div>
+        <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:#60c8f0"></div>Atenção</div>
+        <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:#5a5f6e"></div>Vencida</div>
+        <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:rgba(255,94,94,0.12);border:0.5px dashed rgba(255,94,94,0.5)"></div>Lacuna</div>
+      </div>
+    </div>`;
+}
+
+function setGanttFiltro(campo, valor) {
+  ganttFiltro[campo] = valor || null;
+  const emp = dadosGlobais.empresas[empresaAtiva];
+  document.getElementById('gantt-container').innerHTML = renderGantt(emp);
+}
+
+function renderApp(data) {
+  dadosGlobais = data;
+  const atualizado = data.atualizado ? new Date(data.atualizado+'T12:00:00').toLocaleDateString('pt-BR') : '—';
+
+  const tabs = data.empresas.map((e,i) =>
+    `<button class="tab ${i===0?'active':''}" onclick="trocarEmpresa(${i}, this)">${e.nome}</button>`
+  ).join('');
+
+  const empAtual = data.empresas[0];
 
   document.getElementById('app').innerHTML = `
     <div class="header">
-      <div class="header-top">
-        <div class="logo-area">
-          <div class="tag">Painel de Certidões</div>
-          <h1>${data.empresa.split(' ')[0]} <span>${data.empresa.split(' ').slice(1).join(' ')}</span></h1>
-          <div class="updated">atualizado em ${atualizado} · hoje é ${dataAtual}</div>
-        </div>
-        <div class="score-ring">
-          <div class="ring-wrap">
-            <svg width="80" height="80" viewBox="0 0 80 80">
-              <circle class="ring-track" cx="40" cy="40" r="30"/>
-              <circle class="ring-fill" cx="40" cy="40" r="30"
-                stroke="${scoreColor}"
-                stroke-dasharray="${circ}"
-                stroke-dashoffset="${circ - (score/100)*circ}"
-                id="ring-anim"/>
-            </svg>
-            <div class="ring-label">
-              <div class="ring-num" style="color:${scoreColor}">${score}%</div>
-              <div class="ring-sub">em dia</div>
-            </div>
-          </div>
-          <div class="score-label">saúde<br>documental</div>
-        </div>
-      </div>
+      <div class="tag">Painel de Certidões</div>
+      <h1>ETP · <span>Vetra Norte</span></h1>
+      <div class="updated">atualizado em ${atualizado} · hoje é ${hoje.toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'})}</div>
     </div>
-
-    <div class="metrics">
-      <div class="metric"><div class="metric-val val-red">${vencidas}</div><div class="metric-label">Vencidas</div></div>
-      <div class="metric"><div class="metric-val val-orange">${criticas}</div><div class="metric-label">Crítico ≤5d</div></div>
-      <div class="metric"><div class="metric-val val-blue">${atencao}</div><div class="metric-label">Atenção ≤15d</div></div>
-      <div class="metric"><div class="metric-val val-green">${ok}</div><div class="metric-label">Em dia</div></div>
-    </div>
-
-    ${grupo('🔴 Vencidas', certs.filter(c => c.dias < 0), 0)}
-    ${grupo('🟠 Crítico — vencem em até 5 dias', certs.filter(c => c.dias >= 0 && c.dias <= 5), 1)}
-    ${grupo('🔵 Atenção — vencem em até 15 dias', certs.filter(c => c.dias > 5 && c.dias <= 15), 3)}
-    ${grupo('🟢 Em dia', certs.filter(c => c.dias > 15), 5)}
-
+    <div class="company-tabs">${tabs}</div>
+    <div id="empresa-content">${renderEmpresa(empAtual)}</div>
+    <div id="gantt-container">${renderGantt(empAtual)}</div>
     <div class="footer">
-      <div class="footer-path">📁 Certidões_\\ · OneDrive</div>
-      <div class="footer-brand">ETP Consultoria e Assessoria</div>
-    </div>
-  `;
+      <span>📁 OneDrive · G:\Meu Drive\_ETP\VETRA</span>
+      <span>ETP Consultoria · Vetra Norte Engenharia</span>
+    </div>`;
 
   document.getElementById('loading').style.display = 'none';
   document.getElementById('app').style.display = 'block';
+}
+
+function trocarEmpresa(idx, btn) {
+  empresaAtiva = idx;
+  ganttFiltro = { certidao: 'todas', inicio: null, fim: null };
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  const emp = dadosGlobais.empresas[idx];
+  document.getElementById('empresa-content').innerHTML = renderEmpresa(emp);
+  document.getElementById('gantt-container').innerHTML = renderGantt(emp);
 }
 
 fetch('certidoes.json?v=' + Date.now())
   .then(r => r.json())
   .then(renderApp)
   .catch(() => {
-    document.getElementById('loading').innerHTML =
-      '<p style="color:var(--red);font-family:DM Mono,monospace;font-size:13px">Erro ao carregar certidoes.json</p>';
+    document.getElementById('loading').innerHTML = '<p style="color:var(--red);font-family:DM Mono,monospace;font-size:13px">Erro ao carregar certidoes.json</p>';
   });
 </script>
 </body>
