@@ -5,18 +5,6 @@
       "nome": "ETP Consultoria e Assessoria",
       "certidoes": [
         {
-          "nome": "CERTIDÕES VÁLIDAS ATÉ",
-          "orgao": "—",
-          "vencimento": "2026-07-31",
-          "emissao": "2026-07-01",
-          "arquivo": "Certidões Válidas até 31-07-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "",
-            "comprovar": ""
-          }
-        },
-        {
           "nome": "CND FGTS",
           "orgao": "Caixa Econômica Federal",
           "vencimento": "2026-07-31",
@@ -244,18 +232,6 @@
           "links": {
             "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
             "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
-          }
-        },
-        {
-          "nome": "CERTIDÕES VÁLIDAS ATÉ",
-          "orgao": "—",
-          "vencimento": "2025-07-16",
-          "emissao": "2025-06-16",
-          "arquivo": "Certidões Válidas até 16-07-2025.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "",
-            "comprovar": ""
           }
         },
         {
@@ -858,5 +834,5 @@
     }
   ],
   "atualizado": "2026-07-20",
-  "gerado_em": "20/07/2026 11:14"
+  "gerado_em": "20/07/2026 11:26"
 }
