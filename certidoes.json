@@ -6,7 +6,7 @@
       "certidoes": [
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-08-18",
           "emissao": "2026-07-19",
           "arquivo": "CND FALÊNCIA 18-08-2026.pdf",
@@ -104,7 +104,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2025-02-23",
           "emissao": "2025-01-24",
           "arquivo": "CND FALÊNCIA 23-02-2025.pdf",
@@ -164,7 +164,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2025-05-12",
           "emissao": "2025-04-12",
           "arquivo": "CND FALÊNCIA 12-05-2025.pdf",
@@ -200,7 +200,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2025-06-16",
           "emissao": "2025-05-17",
           "arquivo": "CND FALÊNCIA 16-06-2025.pdf",
@@ -236,7 +236,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2025-07-16",
           "emissao": "2025-06-16",
           "arquivo": "CND FALÊNCIA 16-07-2025.pdf",
@@ -308,7 +308,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2025-09-02",
           "emissao": "2025-08-03",
           "arquivo": "CND FALÊNCIA 02-09-2025.pdf",
@@ -368,7 +368,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2025-10-02",
           "emissao": "2025-09-02",
           "arquivo": "CND FALÊNCIA 02-10-2025.pdf",
@@ -416,7 +416,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2025-10-30",
           "emissao": "2025-09-30",
           "arquivo": "CND FALÊNCIA 30-10-2025.pdf",
@@ -452,7 +452,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2025-12-04",
           "emissao": "2025-11-04",
           "arquivo": "CND FALÊNCIA 04-12-2025.pdf",
@@ -500,7 +500,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-01-13",
           "emissao": "2025-12-14",
           "arquivo": "CND FALÊNCIA 13-01-2026.pdf",
@@ -560,7 +560,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-03-03",
           "emissao": "2026-02-01",
           "arquivo": "CND FALÊNCIA 03-03-2026.pdf",
@@ -620,7 +620,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-05-01",
           "emissao": "2026-04-01",
           "arquivo": "CND FALÊNCIA 01-05-2026.pdf",
@@ -668,7 +668,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-06-03",
           "emissao": "2026-05-04",
           "arquivo": "CND FALÊNCIA 03-06-2026.pdf",
@@ -728,7 +728,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-07-18",
           "emissao": "2026-06-18",
           "arquivo": "CND FALÊNCIA 18-07-2026.pdf",
@@ -794,7 +794,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-09-01",
           "emissao": "2026-08-02",
           "arquivo": "CND FALÊNCIA 01-09-2026-vetra.pdf",
@@ -856,7 +856,7 @@
         },
         {
           "nome": "CND FALÊNCIA",
-          "orgao": "Junta Comercial",
+          "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-08-02",
           "emissao": "2026-07-03",
           "arquivo": "CND FALÊNCIA 02-08-2026-vetra.pdf",
@@ -882,5 +882,5 @@
     }
   ],
   "atualizado": "2026-08-02",
-  "gerado_em": "02/08/2026 12:43"
+  "gerado_em": "02/08/2026 12:47"
 }
