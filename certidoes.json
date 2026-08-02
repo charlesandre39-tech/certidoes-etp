@@ -5,11 +5,23 @@
       "nome": "ETP Consultoria e Assessoria",
       "certidoes": [
         {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Fazenda",
+          "vencimento": "2026-07-25",
+          "emissao": "2026-06-25",
+          "arquivo": "CND SEFAZ 25-07-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
           "nome": "CND FALÊNCIA",
           "orgao": "Tribunal de Justiça do Amazonas",
-          "vencimento": "2026-07-18",
-          "emissao": "2026-06-18",
-          "arquivo": "CND FALÊNCIA 18-07-2026.pdf",
+          "vencimento": "2026-07-30",
+          "emissao": "2026-06-30",
+          "arquivo": "CND FALÊNCIA 30-07-2026.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
@@ -19,9 +31,9 @@
         {
           "nome": "CND FGTS",
           "orgao": "Caixa Econômica Federal",
-          "vencimento": "2026-07-24",
-          "emissao": "2026-06-24",
-          "arquivo": "CND FGTS 24-07-2026.pdf",
+          "vencimento": "2026-08-03",
+          "emissao": "2026-07-04",
+          "arquivo": "CND FGTS 03-08-2026.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
@@ -29,23 +41,11 @@
           }
         },
         {
-          "nome": "CND PREFEITURA",
-          "orgao": "Prefeitura Municipal",
-          "vencimento": "2026-07-30",
-          "emissao": "2026-01-31",
-          "arquivo": "CND PREFEITURA 30-07-2026.pdf",
-          "vigencia_dias": 180,
-          "links": {
-            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
-            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
-          }
-        },
-        {
           "nome": "CND TRABALHISTA",
           "orgao": "TST",
-          "vencimento": "2026-07-31",
-          "emissao": "2026-02-01",
-          "arquivo": "CND TRABALHISTA 31-07-2026.pdf",
+          "vencimento": "2026-08-05",
+          "emissao": "2026-02-06",
+          "arquivo": "CND TRABALHISTA 05-08-2026.pdf",
           "vigencia_dias": 180,
           "links": {
             "emitir": "https://www.tst.jus.br/certidao",
@@ -53,27 +53,27 @@
           }
         },
         {
-          "nome": "CND SEFAZ",
-          "orgao": "Secretaria de Fazenda",
-          "vencimento": "2026-08-01",
-          "emissao": "2026-07-02",
-          "arquivo": "CND SEFAZ 01-08-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
-            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
-          }
-        },
-        {
           "nome": "CND RECEITA FEDERAL",
           "orgao": "Receita Federal",
-          "vencimento": "2026-09-27",
-          "emissao": "2026-03-31",
-          "arquivo": "CND RECEITA FEDERAL 27-09-2026.pdf",
+          "vencimento": "2026-08-07",
+          "emissao": "2026-02-08",
+          "arquivo": "CND RECEITA FEDERAL 07-08-2026.pdf",
           "vigencia_dias": 180,
           "links": {
             "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
             "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
+          }
+        },
+        {
+          "nome": "CND PREFEITURA",
+          "orgao": "Prefeitura Municipal",
+          "vencimento": "2026-09-20",
+          "emissao": "2026-03-24",
+          "arquivo": "CND PREFEITURA 20-09-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
+            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
           }
         }
       ],
@@ -727,6 +727,18 @@
           }
         },
         {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Tribunal de Justiça do Amazonas",
+          "vencimento": "2026-07-18",
+          "emissao": "2026-06-18",
+          "arquivo": "CND FALÊNCIA 18-07-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
+            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
+        },
+        {
           "nome": "CND SEFAZ",
           "orgao": "Secretaria de Fazenda",
           "vencimento": "2026-07-18",
@@ -870,5 +882,5 @@
     }
   ],
   "atualizado": "2026-08-02",
-  "gerado_em": "02/08/2026 13:51"
+  "gerado_em": "02/08/2026 13:56"
 }
