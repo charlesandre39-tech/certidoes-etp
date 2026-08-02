@@ -29,11 +29,35 @@
           }
         },
         {
+          "nome": "CND PREFEITURA",
+          "orgao": "Prefeitura Municipal",
+          "vencimento": "2026-07-30",
+          "emissao": "2026-01-31",
+          "arquivo": "CND PREFEITURA 30-07-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
+            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
+          }
+        },
+        {
+          "nome": "CND TRABALHISTA",
+          "orgao": "TST",
+          "vencimento": "2026-07-31",
+          "emissao": "2026-02-01",
+          "arquivo": "CND TRABALHISTA 31-07-2026.pdf",
+          "vigencia_dias": 180,
+          "links": {
+            "emitir": "https://www.tst.jus.br/certidao",
+            "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        },
+        {
           "nome": "CND SEFAZ",
           "orgao": "Secretaria de Fazenda",
-          "vencimento": "2026-08-18",
-          "emissao": "2026-07-19",
-          "arquivo": "CND SEFAZ 18-08-2026.pdf",
+          "vencimento": "2026-08-01",
+          "emissao": "2026-07-02",
+          "arquivo": "CND SEFAZ 01-08-2026.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
@@ -50,18 +74,6 @@
           "links": {
             "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
             "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
-          }
-        },
-        {
-          "nome": "CND PREFEITURA",
-          "orgao": "Prefeitura Municipal",
-          "vencimento": "2027-01-24",
-          "emissao": "2026-07-28",
-          "arquivo": "CND PREFEITURA 24-01-2027.pdf",
-          "vigencia_dias": 180,
-          "links": {
-            "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
-            "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
           }
         }
       ],
@@ -858,5 +870,5 @@
     }
   ],
   "atualizado": "2026-08-02",
-  "gerado_em": "02/08/2026 13:50"
+  "gerado_em": "02/08/2026 13:51"
 }
