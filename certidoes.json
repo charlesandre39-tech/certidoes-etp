@@ -7,13 +7,25 @@
         {
           "nome": "CND FALÊNCIA",
           "orgao": "Tribunal de Justiça do Amazonas",
-          "vencimento": "2026-08-18",
-          "emissao": "2026-07-19",
-          "arquivo": "CND FALÊNCIA 18-08-2026.pdf",
+          "vencimento": "2026-07-18",
+          "emissao": "2026-06-18",
+          "arquivo": "CND FALÊNCIA 18-07-2026.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
             "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-07-24",
+          "emissao": "2026-06-24",
+          "arquivo": "CND FGTS 24-07-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
           }
         },
         {
@@ -29,18 +41,6 @@
           }
         },
         {
-          "nome": "CND FGTS",
-          "orgao": "Caixa Econômica Federal",
-          "vencimento": "2026-08-24",
-          "emissao": "2026-07-25",
-          "arquivo": "CND FGTS 24-08-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
-            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
-          }
-        },
-        {
           "nome": "CND RECEITA FEDERAL",
           "orgao": "Receita Federal",
           "vencimento": "2026-09-27",
@@ -50,18 +50,6 @@
           "links": {
             "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
             "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
-          }
-        },
-        {
-          "nome": "CND TRABALHISTA",
-          "orgao": "TST",
-          "vencimento": "2026-12-15",
-          "emissao": "2026-06-18",
-          "arquivo": "CND TRABALHISTA 15-12-2026.pdf",
-          "vigencia_dias": 180,
-          "links": {
-            "emitir": "https://www.tst.jus.br/certidao",
-            "comprovar": "https://www.tst.jus.br/certidao"
           }
         },
         {
@@ -727,18 +715,6 @@
           }
         },
         {
-          "nome": "CND FALÊNCIA",
-          "orgao": "Tribunal de Justiça do Amazonas",
-          "vencimento": "2026-07-18",
-          "emissao": "2026-06-18",
-          "arquivo": "CND FALÊNCIA 18-07-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
-            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
-          }
-        },
-        {
           "nome": "CND SEFAZ",
           "orgao": "Secretaria de Fazenda",
           "vencimento": "2026-07-18",
@@ -882,5 +858,5 @@
     }
   ],
   "atualizado": "2026-08-02",
-  "gerado_em": "02/08/2026 13:48"
+  "gerado_em": "02/08/2026 13:50"
 }
