@@ -122,8 +122,8 @@ function fmtData(v) {
 }
 function statusInfo(dias) {
   if (dias < 0)   return { cls:'red',    dot:'dot-red',    pill:'pill-red',    label:'Vencida',  cor:'var(--red)' };
-  if (dias <= 5)  return { cls:'orange', dot:'dot-orange', pill:'pill-orange', label:'Crítico',  cor:'var(--orange)' };
-  if (dias <= 15) return { cls:'blue',   dot:'dot-blue',   pill:'pill-blue',   label:'Atenção',  cor:'var(--blue)' };
+  if (dias <= 2)  return { cls:'orange', dot:'dot-orange', pill:'pill-orange', label:'Crítico',  cor:'var(--orange)' };
+  if (dias <= 5)  return { cls:'blue',   dot:'dot-blue',   pill:'pill-blue',   label:'Atenção',  cor:'var(--blue)' };
   return               { cls:'green',  dot:'dot-green',  pill:'pill-green',  label:'Em dia',   cor:'var(--green)' };
 }
 
@@ -136,9 +136,9 @@ function renderEmpresa(emp) {
   certs.sort((a,b) => a.dias - b.dias);
 
   const vencidas = certs.filter(c => c.dias < 0).length;
-  const criticas = certs.filter(c => c.dias >= 0 && c.dias <= 5).length;
-  const atencao  = certs.filter(c => c.dias > 5 && c.dias <= 15).length;
-  const ok       = certs.filter(c => c.dias > 15).length;
+  const criticas = certs.filter(c => c.dias >= 0 && c.dias <= 2).length;
+  const atencao  = certs.filter(c => c.dias > 2 && c.dias <= 5).length;
+  const ok       = certs.filter(c => c.dias > 5).length;
 
   function card(c, i) {
     const s = statusInfo(c.dias);
@@ -172,14 +172,14 @@ function renderEmpresa(emp) {
   return `
     <div class="metrics">
       <div class="metric"><div class="metric-val" style="color:var(--red)">${vencidas}</div><div class="metric-label">Vencidas</div></div>
-      <div class="metric"><div class="metric-val" style="color:var(--orange)">${criticas}</div><div class="metric-label">Crítico ≤5d</div></div>
-      <div class="metric"><div class="metric-val" style="color:var(--blue)">${atencao}</div><div class="metric-label">Atenção ≤15d</div></div>
+      <div class="metric"><div class="metric-val" style="color:var(--orange)">${criticas}</div><div class="metric-label">Crítico ≤2d</div></div>
+      <div class="metric"><div class="metric-val" style="color:var(--blue)">${atencao}</div><div class="metric-label">Atenção ≤5d</div></div>
       <div class="metric"><div class="metric-val" style="color:var(--green)">${ok}</div><div class="metric-label">Em dia</div></div>
     </div>
     ${grupo('🔴 Vencidas', certs.filter(c=>c.dias<0), 0)}
-    ${grupo('🟠 Crítico — vencem em até 5 dias', certs.filter(c=>c.dias>=0&&c.dias<=5), 2)}
-    ${grupo('🔵 Atenção — vencem em até 15 dias', certs.filter(c=>c.dias>5&&c.dias<=15), 4)}
-    ${grupo('🟢 Em dia', certs.filter(c=>c.dias>15), 6)}
+    ${grupo('🟠 Crítico — vencem em até 2 dias', certs.filter(c=>c.dias>=0&&c.dias<=2), 2)}
+    ${grupo('🔵 Atenção — vencem em até 5 dias', certs.filter(c=>c.dias>2&&c.dias<=5), 4)}
+    ${grupo('🟢 Em dia', certs.filter(c=>c.dias>5), 6)}
   `;
 }
 
@@ -226,8 +226,8 @@ function renderGantt(emp) {
       const dias = diasRestantes(c.vencimento);
       let cor = '#60f0a8';
       if (new Date(c.vencimento) < hoje) cor = '#5a5f6e';
-      else if (dias <= 5)  cor = '#ffaa3c';
-      else if (dias <= 15) cor = '#60c8f0';
+      else if (dias <= 2)  cor = '#ffaa3c';
+      else if (dias <= 5)  cor = '#60c8f0';
       barras += `<div class="gantt-bar" style="left:${s}%;width:${w}%;background:${cor}" title="${c.nome}: ${fmtData(c.emissao)} → ${fmtData(c.vencimento)}"></div>`;
 
       // Lacuna
