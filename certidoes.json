@@ -5,30 +5,6 @@
       "nome": "ETP Consultoria e Assessoria",
       "certidoes": [
         {
-          "nome": "CND FALÊNCIA",
-          "orgao": "Tribunal de Justiça do Amazonas",
-          "vencimento": "2026-08-18",
-          "emissao": "2026-07-19",
-          "arquivo": "CND FALÊNCIA 18-08-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
-            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
-          }
-        },
-        {
-          "nome": "CND SEFAZ",
-          "orgao": "Secretaria de Estado da Fazenda do Amazonas",
-          "vencimento": "2026-08-18",
-          "emissao": "2026-07-19",
-          "arquivo": "CND SEFAZ 18-08-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
-            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
-          }
-        },
-        {
           "nome": "CND FGTS",
           "orgao": "Caixa Econômica Federal",
           "vencimento": "2026-08-24",
@@ -38,6 +14,30 @@
           "links": {
             "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
             "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Tribunal de Justiça do Amazonas",
+          "vencimento": "2026-09-17",
+          "emissao": "2026-08-18",
+          "arquivo": "CND FALÊNCIA 17-09-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
+            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Estado da Fazenda do Amazonas",
+          "vencimento": "2026-09-17",
+          "emissao": "2026-08-18",
+          "arquivo": "CND SEFAZ 17-09-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
           }
         },
         {
@@ -773,6 +773,30 @@
             "emitir": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=257",
             "comprovar": "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1415"
           }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Tribunal de Justiça do Amazonas",
+          "vencimento": "2026-08-18",
+          "emissao": "2026-07-19",
+          "arquivo": "CND FALÊNCIA 18-08-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
+            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Estado da Fazenda do Amazonas",
+          "vencimento": "2026-08-18",
+          "emissao": "2026-07-19",
+          "arquivo": "CND SEFAZ 18-08-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
         }
       ]
     },
@@ -881,6 +905,6 @@
       ]
     }
   ],
-  "atualizado": "2026-08-18",
-  "gerado_em": "18/08/2026 08:08"
+  "atualizado": "2026-08-19",
+  "gerado_em": "19/08/2026 08:00"
 }
