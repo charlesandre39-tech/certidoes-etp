@@ -41,6 +41,18 @@
           }
         },
         {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-09-19",
+          "emissao": "2026-08-20",
+          "arquivo": "CND FGTS 19-09-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
           "nome": "CND RECEITA FEDERAL",
           "orgao": "Receita Federal",
           "vencimento": "2026-09-27",
@@ -905,6 +917,6 @@
       ]
     }
   ],
-  "atualizado": "2026-08-19",
-  "gerado_em": "19/08/2026 08:00"
+  "atualizado": "2026-08-20",
+  "gerado_em": "20/08/2026 08:00"
 }
