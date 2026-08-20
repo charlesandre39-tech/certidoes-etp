@@ -5,18 +5,6 @@
       "nome": "ETP Consultoria e Assessoria",
       "certidoes": [
         {
-          "nome": "CND FGTS",
-          "orgao": "Caixa Econômica Federal",
-          "vencimento": "2026-08-24",
-          "emissao": "2026-07-25",
-          "arquivo": "CND FGTS 24-08-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
-            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
-          }
-        },
-        {
           "nome": "CND FALÊNCIA",
           "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-09-17",
@@ -809,6 +797,18 @@
             "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
             "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
           }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-08-24",
+          "emissao": "2026-07-25",
+          "arquivo": "CND FGTS 24-08-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
         }
       ]
     },
@@ -918,5 +918,5 @@
     }
   ],
   "atualizado": "2026-08-20",
-  "gerado_em": "20/08/2026 08:00"
+  "gerado_em": "20/08/2026 10:55"
 }
