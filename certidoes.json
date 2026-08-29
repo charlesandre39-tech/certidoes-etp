@@ -819,9 +819,9 @@
         {
           "nome": "CND SEFAZ",
           "orgao": "Secretaria de Estado da Fazenda do Amazonas",
-          "vencimento": "2026-09-01",
-          "emissao": "2026-08-02",
-          "arquivo": "CND SEFAZ 01-09-2026-vetra.pdf",
+          "vencimento": "2026-09-27",
+          "emissao": "2026-08-28",
+          "arquivo": "CND SEFAZ 27-09-2026-vetra.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
@@ -831,9 +831,9 @@
         {
           "nome": "CND FALÊNCIA",
           "orgao": "Tribunal de Justiça do Amazonas",
-          "vencimento": "2026-09-01",
-          "emissao": "2026-08-02",
-          "arquivo": "CND FALÊNCIA 01-09-2026-vetra.pdf",
+          "vencimento": "2026-09-27",
+          "emissao": "2026-08-28",
+          "arquivo": "CND FALÊNCIA 27-09-2026-vetra.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
@@ -903,6 +903,30 @@
           }
         },
         {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Estado da Fazenda do Amazonas",
+          "vencimento": "2026-09-01",
+          "emissao": "2026-08-02",
+          "arquivo": "CND SEFAZ 01-09-2026-vetra.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Tribunal de Justiça do Amazonas",
+          "vencimento": "2026-09-01",
+          "emissao": "2026-08-02",
+          "arquivo": "CND FALÊNCIA 01-09-2026-vetra.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
+            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
+        },
+        {
           "nome": "CND TRABALHISTA",
           "orgao": "Justiça do Trabalho do Amazonas",
           "vencimento": "2027-01-12",
@@ -917,6 +941,6 @@
       ]
     }
   ],
-  "atualizado": "2026-08-28",
-  "gerado_em": "28/08/2026 08:00"
+  "atualizado": "2026-08-29",
+  "gerado_em": "29/08/2026 13:40"
 }
