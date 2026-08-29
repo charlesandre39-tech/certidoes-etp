@@ -817,6 +817,18 @@
       "nome": "Vetra Norte Engenharia",
       "certidoes": [
         {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-09-26",
+          "emissao": "2026-08-27",
+          "arquivo": "CND FGTS 26-09-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
           "nome": "CND SEFAZ",
           "orgao": "Secretaria de Estado da Fazenda do Amazonas",
           "vencimento": "2026-09-27",
@@ -942,5 +954,5 @@
     }
   ],
   "atualizado": "2026-08-29",
-  "gerado_em": "29/08/2026 13:40"
+  "gerado_em": "29/08/2026 13:57"
 }
