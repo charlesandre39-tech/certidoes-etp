@@ -17,6 +17,42 @@
           }
         },
         {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-10-11",
+          "emissao": "2026-09-11",
+          "arquivo": "CND FGTS 11-10-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Tribunal de Justiça do Amazonas",
+          "vencimento": "2026-10-27",
+          "emissao": "2026-09-27",
+          "arquivo": "CND FALÊNCIA 27-10-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
+            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Estado da Fazenda do Amazonas",
+          "vencimento": "2026-10-27",
+          "emissao": "2026-09-27",
+          "arquivo": "CND SEFAZ 27-10-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
           "nome": "CND TRABALHISTA",
           "orgao": "Justiça do Trabalho do Amazonas",
           "vencimento": "2026-12-15",
@@ -819,9 +855,9 @@
         {
           "nome": "CND FGTS",
           "orgao": "Caixa Econômica Federal",
-          "vencimento": "2026-09-26",
-          "emissao": "2026-08-27",
-          "arquivo": "CND FGTS 26-09-2026.pdf",
+          "vencimento": "2026-10-20",
+          "emissao": "2026-09-20",
+          "arquivo": "CND FGTS 20-10-2026.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
@@ -831,9 +867,9 @@
         {
           "nome": "CND SEFAZ",
           "orgao": "Secretaria de Estado da Fazenda do Amazonas",
-          "vencimento": "2026-09-27",
-          "emissao": "2026-08-28",
-          "arquivo": "CND SEFAZ 27-09-2026-vetra.pdf",
+          "vencimento": "2026-10-27",
+          "emissao": "2026-09-27",
+          "arquivo": "CND SEFAZ 27-10-2026-vetra.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
@@ -843,9 +879,9 @@
         {
           "nome": "CND FALÊNCIA",
           "orgao": "Tribunal de Justiça do Amazonas",
-          "vencimento": "2026-09-27",
-          "emissao": "2026-08-28",
-          "arquivo": "CND FALÊNCIA 27-09-2026-vetra.pdf",
+          "vencimento": "2026-10-27",
+          "emissao": "2026-09-27",
+          "arquivo": "CND FALÊNCIA 27-10-2026-vetra.pdf",
           "vigencia_dias": 30,
           "links": {
             "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
@@ -939,6 +975,42 @@
           }
         },
         {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-09-26",
+          "emissao": "2026-08-27",
+          "arquivo": "CND FGTS 26-09-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
+          "nome": "CND SEFAZ",
+          "orgao": "Secretaria de Estado da Fazenda do Amazonas",
+          "vencimento": "2026-09-27",
+          "emissao": "2026-08-28",
+          "arquivo": "CND SEFAZ 27-09-2026-vetra.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
+            "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Tribunal de Justiça do Amazonas",
+          "vencimento": "2026-09-27",
+          "emissao": "2026-08-28",
+          "arquivo": "CND FALÊNCIA 27-09-2026-vetra.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
+            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
+        },
+        {
           "nome": "CND TRABALHISTA",
           "orgao": "Justiça do Trabalho do Amazonas",
           "vencimento": "2027-01-12",
@@ -954,5 +1026,5 @@
     }
   ],
   "atualizado": "2026-09-27",
-  "gerado_em": "27/09/2026 14:36"
+  "gerado_em": "27/09/2026 18:01"
 }
