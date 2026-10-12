@@ -5,18 +5,6 @@
       "nome": "ETP Consultoria e Assessoria",
       "certidoes": [
         {
-          "nome": "CND FGTS",
-          "orgao": "Caixa Econômica Federal",
-          "vencimento": "2026-10-11",
-          "emissao": "2026-09-11",
-          "arquivo": "CND FGTS 11-10-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
-            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
-          }
-        },
-        {
           "nome": "CND FALÊNCIA",
           "orgao": "Tribunal de Justiça do Amazonas",
           "vencimento": "2026-10-27",
@@ -38,6 +26,18 @@
           "links": {
             "emitir": "https://sistemas.sefaz.am.gov.br/GAE/mnt/dividaAtiva/certidaoNegativa/emitirCertidaoNegativaNaoContPortal.do",
             "comprovar": "https://online.sefaz.am.gov.br/CertidaoNegativa/vlCertidao.asp"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-11-09",
+          "emissao": "2026-10-10",
+          "arquivo": "CND FGTS 09-11-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
           }
         },
         {
@@ -857,6 +857,18 @@
             "emitir": "https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cnpj",
             "comprovar": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/certaut/NIAutentic.asp?origem=pj"
           }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-10-11",
+          "emissao": "2026-09-11",
+          "arquivo": "CND FGTS 11-10-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
         }
       ]
     },
@@ -1037,6 +1049,6 @@
       ]
     }
   ],
-  "atualizado": "2026-10-11",
-  "gerado_em": "11/10/2026 14:47"
+  "atualizado": "2026-10-12",
+  "gerado_em": "12/10/2026 08:28"
 }
