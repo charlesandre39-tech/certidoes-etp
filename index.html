@@ -72,6 +72,53 @@
   .btn-check { border: 0.5px solid rgba(96,200,240,0.4); background: transparent; color: var(--blue); }
   .btn-check:hover { background: var(--blue-bg); }
 
+
+  .cnpj-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 1.25rem; font-family: 'DM Mono', monospace; font-size: 13px; }
+  .cnpj-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .cnpj-num { color: var(--text); font-size: 15px; letter-spacing: 0.02em; }
+  .btn-copy { font-family: 'DM Mono', monospace; font-size: 11px; padding: 5px 10px; border-radius: 6px; cursor: pointer; border: 0.5px solid var(--border); background: transparent; color: var(--muted); transition: all 0.15s; }
+  .btn-copy:hover { background: var(--border); color: var(--text); }
+  .btn-copy:focus-visible, .tab:focus-visible, .btn-emit:focus-visible, .btn-check:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .btn-copy.copiado { border-color: var(--green); color: var(--green); }
+
+  .contrato-meta { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .contrato-obs { font-size: 12px; color: var(--orange); margin-top: 6px; }
+  .cert-card.muted { border-left-color: var(--muted); opacity: 0.7; }
+  .dot-muted { background: var(--muted); }
+  .pill-muted { background: rgba(90,95,110,0.15); color: var(--muted); }
+  .contratos-vazio { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); padding: 14px 16px; border: 1px dashed var(--border); border-radius: 10px; }
+
+
+  .contratos-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+  .edit-status { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); }
+  .edit-status button { background: none; border: none; color: var(--muted); text-decoration: underline; cursor: pointer; font: inherit; padding: 0 0 0 6px; }
+  .btn-novo { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 8px; cursor: pointer; border: 1px solid var(--accent); background: transparent; color: var(--accent); transition: all 0.15s; }
+  .btn-novo:hover { background: rgba(200,240,96,0.08); }
+  .btn-novo:focus-visible, .btn-edit:focus-visible, .modal button:focus-visible, .modal input:focus-visible, .modal select:focus-visible, .modal textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .btn-edit { font-family: 'DM Mono', monospace; font-size: 11px; padding: 5px 10px; border-radius: 6px; cursor: pointer; border: 0.5px solid var(--border); background: transparent; color: var(--muted); transition: all 0.15s; }
+  .btn-edit:hover { background: var(--border); color: var(--text); }
+
+  .modal-bg { position: fixed; inset: 0; background: rgba(5,6,8,0.75); z-index: 100; display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
+  .modal { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; width: 100%; max-width: 560px; padding: 24px; }
+  .modal h2 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+  .modal .modal-sub { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-bottom: 18px; line-height: 1.5; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; }
+  .form-grid .full { grid-column: 1 / -1; }
+  .field label { display: block; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 5px; }
+  .field input, .field select, .field textarea { width: 100%; font-family: 'DM Mono', monospace; font-size: 13px; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; }
+  .field textarea { resize: vertical; min-height: 60px; font-family: 'Syne', sans-serif; }
+  .field input[type="checkbox"] { width: auto; margin-right: 6px; }
+  .field .check { display: flex; align-items: center; font-family: 'Syne', sans-serif; font-size: 13px; text-transform: none; letter-spacing: 0; color: var(--text); padding-top: 22px; }
+  .form-erro { color: var(--red); font-family: 'DM Mono', monospace; font-size: 12px; margin-top: 12px; min-height: 16px; }
+  .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; flex-wrap: wrap; }
+  .modal-actions .spacer { flex: 1; }
+  .btn-primary { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; padding: 9px 18px; border-radius: 8px; cursor: pointer; border: none; background: var(--accent); color: #0e0f11; }
+  .btn-primary:disabled { opacity: 0.5; cursor: wait; }
+  .btn-sec { font-family: 'Syne', sans-serif; font-size: 13px; padding: 9px 16px; border-radius: 8px; cursor: pointer; border: 1px solid var(--border); background: transparent; color: var(--muted); }
+  .btn-danger { font-family: 'Syne', sans-serif; font-size: 13px; padding: 9px 16px; border-radius: 8px; cursor: pointer; border: 1px solid rgba(255,94,94,0.4); background: transparent; color: var(--red); }
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--surface); border: 1px solid var(--green); color: var(--green); font-family: 'DM Mono', monospace; font-size: 12px; padding: 10px 18px; border-radius: 8px; z-index: 200; }
+  @media (max-width: 600px) { .form-grid { grid-template-columns: 1fr; } .field .check { padding-top: 0; } }
+
   .gantt-section { margin-top: 3rem; }
   .gantt-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 10px; }
   .gantt-title { font-size: 14px; font-weight: 600; color: var(--text); }
@@ -97,6 +144,7 @@
   #loading { text-align: center; padding: 80px 0; }
   .spinner { width: 32px; height: 32px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
   @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .cert-card { animation: none; } .cert-card:hover { transform: none; } }
   @media (max-width: 600px) {
     .metrics { grid-template-columns: repeat(2, 1fr); }
     .btn-group { flex-direction: column; }
@@ -109,6 +157,7 @@
   <div id="loading"><div class="spinner"></div><p style="font-family:'DM Mono',monospace;font-size:12px;color:var(--muted)">Carregando certidões...</p></div>
   <div id="app" style="display:none"></div>
 </div>
+<div id="modal-root"></div>
 <script>
 const hoje = new Date(); hoje.setHours(0,0,0,0);
 
@@ -126,6 +175,280 @@ function statusInfo(dias) {
   if (dias <= 5)  return { cls:'blue',   dot:'dot-blue',   pill:'pill-blue',   label:'Atenção',  cor:'var(--blue)' };
   return               { cls:'green',  dot:'dot-green',  pill:'pill-green',  label:'Em dia',   cor:'var(--green)' };
 }
+
+// ─── CNPJ ─────────────────────────────────────────────────────────────
+function renderCnpj(emp) {
+  if (!emp.cnpj) return '';
+  return `<div class="cnpj-bar">
+    <span class="cnpj-label">CNPJ</span>
+    <span class="cnpj-num">${emp.cnpj}</span>
+    <button class="btn-copy" onclick="copiarCnpj(this, '${emp.cnpj}', false)">Copiar</button>
+    <button class="btn-copy" onclick="copiarCnpj(this, '${emp.cnpj}', true)">Copiar só números</button>
+  </div>`;
+}
+function copiarCnpj(btn, cnpj, soNumeros) {
+  const texto = soNumeros ? cnpj.replace(/\D/g, '') : cnpj;
+  const original = btn.textContent;
+  const ok = () => { btn.textContent = 'Copiado'; btn.classList.add('copiado');
+    setTimeout(() => { btn.textContent = original; btn.classList.remove('copiado'); }, 1500); };
+  if (navigator.clipboard?.writeText) {
+    navigator.clipboard.writeText(texto).then(ok).catch(() => fallbackCopiar(texto, ok));
+  } else fallbackCopiar(texto, ok);
+}
+function fallbackCopiar(texto, ok) {
+  const t = document.createElement('textarea'); t.value = texto; document.body.appendChild(t);
+  t.select(); try { document.execCommand('copy'); ok(); } catch (e) {} t.remove();
+}
+
+// ─── CONTRATOS ────────────────────────────────────────────────────────
+// Fonte dos contratos: contratos.json no repositório, editado por este painel
+// via API do GitHub. O token fica só neste navegador (localStorage).
+const GH = { owner: 'charlesandre39-tech', repo: 'certidoes-etp', path: 'contratos.json', branch: 'main' };
+const TOKEN_KEY = 'gh_certidoes_token';
+const STATUS_SEM_ALERTA = ['encerrado', 'nao_renovar'];
+const STATUS_LABEL = { vigente: 'Vigente', em_renovacao: 'Em renovação', encerrado: 'Encerrado', nao_renovar: 'Não renovar' };
+const ALERTAS_PADRAO = [120, 90, 60, 30];
+
+let contratos = [];
+let contratosSha = null;
+
+function getToken() { try { return localStorage.getItem(TOKEN_KEY) || ''; } catch (e) { return ''; } }
+function setToken(t) { try { t ? localStorage.setItem(TOKEN_KEY, t) : localStorage.removeItem(TOKEN_KEY); } catch (e) {} }
+function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c])); }
+function b64decode(s) { return decodeURIComponent(escape(atob(s.replace(/\n/g, '')))); }
+function b64encode(s) { return btoa(unescape(encodeURIComponent(s))); }
+function novoId() { return 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+function apiUrl() { return `https://api.github.com/repos/${GH.owner}/${GH.repo}/contents/${GH.path}`; }
+function ghHeaders() { return { Authorization: `Bearer ${getToken()}`, Accept: 'application/vnd.github+json' }; }
+
+function normalizar(lista) { return (lista || []).map(c => c.id ? c : { ...c, id: novoId() }); }
+
+async function carregarContratos() {
+  if (getToken()) {
+    try {
+      const r = await fetch(`${apiUrl()}?ref=${GH.branch}&t=${Date.now()}`, { headers: ghHeaders() });
+      if (r.ok) { const d = await r.json(); contratosSha = d.sha; contratos = normalizar(JSON.parse(b64decode(d.content)).contratos); return; }
+      if (r.status === 404) { contratosSha = null; contratos = []; return; }
+      if (r.status === 401) setToken('');
+    } catch (e) {}
+  }
+  try {
+    const r = await fetch('contratos.json?v=' + Date.now());
+    if (r.ok) { contratos = normalizar((await r.json()).contratos); return; }
+  } catch (e) {}
+  contratos = [];
+}
+
+async function buscarSha() {
+  const r = await fetch(`${apiUrl()}?ref=${GH.branch}&t=${Date.now()}`, { headers: ghHeaders() });
+  return r.ok ? (await r.json()).sha : null;
+}
+
+async function salvarContratos(novaLista, mensagem) {
+  const corpo = () => JSON.stringify({
+    message: mensagem,
+    content: b64encode(JSON.stringify({ contratos: novaLista }, null, 2) + '\n'),
+    branch: GH.branch,
+    ...(contratosSha ? { sha: contratosSha } : {})
+  });
+  const put = () => fetch(apiUrl(), { method: 'PUT', headers: { ...ghHeaders(), 'Content-Type': 'application/json' }, body: corpo() });
+  let r = await put();
+  if (r.status === 409 || r.status === 422) { contratosSha = await buscarSha(); r = await put(); }
+  if (!r.ok) {
+    if (r.status === 401) { setToken(''); throw new Error('Token inválido ou expirado. Configure o acesso de novo.'); }
+    if (r.status === 403 || r.status === 404) throw new Error('O token não tem permissão de escrita no repositório certidoes-etp.');
+    throw new Error(`O GitHub recusou a gravação (código ${r.status}). Tente de novo.`);
+  }
+  contratosSha = (await r.json()).content.sha;
+  contratos = novaLista;
+}
+
+function statusContrato(c) {
+  const st = c.status || 'vigente';
+  if (STATUS_SEM_ALERTA.includes(st)) return { cls:'muted', dot:'dot-muted', pill:'pill-muted', label: STATUS_LABEL[st], cor:'var(--muted)' };
+  const janela = Math.max(...(c.alertas_dias?.length ? c.alertas_dias : ALERTAS_PADRAO));
+  if (c.dias < 0)       return { cls:'red',    dot:'dot-red',    pill:'pill-red',    label:'Vigência encerrada', cor:'var(--red)' };
+  if (c.dias <= 30)     return { cls:'orange', dot:'dot-orange', pill:'pill-orange', label:'Decidir agora',      cor:'var(--orange)' };
+  if (c.dias <= janela) return { cls:'blue',   dot:'dot-blue',   pill:'pill-blue',   label:'Avaliar renovação',  cor:'var(--blue)' };
+  return                       { cls:'green',  dot:'dot-green',  pill:'pill-green',  label: STATUS_LABEL[st] || 'Vigente', cor:'var(--green)' };
+}
+
+function renderContratos(emp) {
+  const lista = contratos
+    .filter(c => c.empresa_id === emp.id && c.fim)
+    .map(c => ({ ...c, dias: diasRestantes(c.fim) }))
+    .sort((a, b) => {
+      const sa = STATUS_SEM_ALERTA.includes(a.status) ? 1 : 0, sb = STATUS_SEM_ALERTA.includes(b.status) ? 1 : 0;
+      return sa - sb || a.dias - b.dias;
+    });
+
+  const editando = !!getToken();
+  const toolbar = `<div class="contratos-toolbar">
+    <button class="btn-novo" onclick="abrirFormContrato(null)">+ Novo contrato</button>
+    <span class="edit-status">${editando ? 'Edição ativa neste navegador<button onclick="sairEdicao()">desativar</button>' : 'Somente leitura<button onclick="abrirTokenModal()">ativar edição</button>'}</span>
+  </div>`;
+
+  const titulo = '<div class="section-label">📄 Contratos</div>' + toolbar;
+  if (!lista.length) return titulo + '<div class="contratos-vazio">Nenhum contrato cadastrado para esta empresa. Use “+ Novo contrato” para adicionar o primeiro.</div>';
+
+  return titulo + lista.map((c, i) => {
+    const s = statusContrato(c);
+    const dl = `${Math.abs(c.dias)}d`;
+    const ds = c.dias < 0 ? 'encerrado há' : c.dias === 0 ? 'termina hoje' : 'restantes';
+    const pror = c.prorrogavel ? `Prorrogável · ${c.prorrogacoes_feitas || 0} prorrogação(ões) feita(s)` : 'Não prorrogável';
+    const valor = c.valor ? Number(c.valor).toLocaleString('pt-BR', { style:'currency', currency:'BRL' }) : '';
+    return `<div class="cert-card ${s.cls}" style="animation-delay:${i*0.05}s">
+      <div class="cert-dot ${s.dot}"></div>
+      <div class="cert-info">
+        <div class="cert-name">${esc(c.orgao) || '—'} · CT ${esc(c.numero) || '—'}</div>
+        <div class="cert-org">${esc(c.objeto)}</div>
+        <div class="contrato-meta"><span>${c.inicio ? fmtData(c.inicio) + ' a ' : 'até '}${fmtData(c.fim)}</span><span>${pror}</span>${valor ? `<span>${valor}</span>` : ''}</div>
+        <span class="pill ${s.pill}">${s.label}</span>
+        ${c.observacoes ? `<div class="contrato-obs">${esc(c.observacoes)}</div>` : ''}
+      </div>
+      <div class="cert-right">
+        <div class="cert-dias">
+          <div class="dias-num" style="color:${s.cor}">${dl}</div>
+          <div class="dias-label">${ds}</div>
+          <div class="cert-date">${fmtData(c.fim)}</div>
+        </div>
+        <div class="btn-group"><button class="btn-edit" onclick="abrirFormContrato('${esc(c.id)}')">Editar</button></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function rerenderEmpresa() {
+  document.getElementById('empresa-content').innerHTML = renderEmpresa(dadosGlobais.empresas[empresaAtiva]);
+}
+
+// ─── MODAIS ───────────────────────────────────────────────────────────
+function abrirModal(html) {
+  const root = document.getElementById('modal-root');
+  root.innerHTML = `<div class="modal-bg" onclick="if(event.target===this)fecharModal()"><div class="modal" role="dialog" aria-modal="true">${html}</div></div>`;
+  const primeiro = root.querySelector('input, select, textarea');
+  if (primeiro) primeiro.focus();
+}
+function fecharModal() { document.getElementById('modal-root').innerHTML = ''; }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharModal(); });
+
+function toast(msg) {
+  const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg;
+  document.body.appendChild(t); setTimeout(() => t.remove(), 2500);
+}
+
+let aposToken = null;
+function abrirTokenModal(callback) {
+  aposToken = callback || null;
+  abrirModal(`
+    <h2>Ativar edição de contratos</h2>
+    <p class="modal-sub">Cole um token do GitHub com permissão de escrita (Contents: Read and write) no repositório certidoes-etp. Ele fica guardado só neste navegador e nunca vai para o repositório.</p>
+    <div class="field"><label for="f-token">Token do GitHub</label><input id="f-token" type="password" autocomplete="off" placeholder="github_pat_… ou ghp_…"></div>
+    <div class="form-erro" id="form-erro"></div>
+    <div class="modal-actions">
+      <button class="btn-sec" onclick="fecharModal()">Cancelar</button>
+      <button class="btn-primary" id="btn-salvar" onclick="salvarToken()">Ativar edição</button>
+    </div>`);
+}
+async function salvarToken() {
+  const t = document.getElementById('f-token').value.trim();
+  const erro = document.getElementById('form-erro');
+  if (!t) { erro.textContent = 'Cole o token para continuar.'; return; }
+  document.getElementById('btn-salvar').disabled = true;
+  setToken(t);
+  const r = await fetch(`https://api.github.com/repos/${GH.owner}/${GH.repo}`, { headers: ghHeaders() }).catch(() => null);
+  if (!r || !r.ok) {
+    setToken('');
+    erro.textContent = 'Não foi possível acessar o repositório com esse token. Confira o token e as permissões.';
+    document.getElementById('btn-salvar').disabled = false;
+    return;
+  }
+  await carregarContratos();
+  fecharModal(); rerenderEmpresa(); toast('Edição ativada');
+  if (aposToken) { const cb = aposToken; aposToken = null; cb(); }
+}
+function sairEdicao() { setToken(''); rerenderEmpresa(); toast('Edição desativada neste navegador'); }
+
+function abrirFormContrato(id) {
+  if (!getToken()) { abrirTokenModal(() => abrirFormContrato(id)); return; }
+  const c = id ? contratos.find(x => x.id === id) : null;
+  const emp = dadosGlobais.empresas[empresaAtiva];
+  const v = c || { empresa_id: emp.id, prorrogavel: true, prorrogacoes_feitas: 0, status: 'vigente', alertas_dias: ALERTAS_PADRAO };
+  const optsEmp = dadosGlobais.empresas.map(e => `<option value="${esc(e.id)}" ${e.id === v.empresa_id ? 'selected' : ''}>${esc(e.nome)}</option>`).join('');
+  const optsSt = Object.entries(STATUS_LABEL).map(([k, l]) => `<option value="${k}" ${k === (v.status || 'vigente') ? 'selected' : ''}>${l}</option>`).join('');
+  abrirModal(`
+    <h2>${c ? 'Editar contrato' : 'Novo contrato'}</h2>
+    <p class="modal-sub">Os alertas por e-mail começam quando faltar o maior número de dias da lista de alertas.</p>
+    <div class="form-grid">
+      <div class="field full"><label for="f-empresa">Empresa</label><select id="f-empresa">${optsEmp}</select></div>
+      <div class="field"><label for="f-orgao">Órgão contratante *</label><input id="f-orgao" value="${esc(v.orgao)}"></div>
+      <div class="field"><label for="f-numero">Nº do contrato *</label><input id="f-numero" value="${esc(v.numero)}" placeholder="081/2025"></div>
+      <div class="field full"><label for="f-objeto">Objeto</label><input id="f-objeto" value="${esc(v.objeto)}"></div>
+      <div class="field"><label for="f-inicio">Início da vigência</label><input id="f-inicio" type="date" value="${esc(v.inicio)}"></div>
+      <div class="field"><label for="f-fim">Fim da vigência *</label><input id="f-fim" type="date" value="${esc(v.fim)}"></div>
+      <div class="field"><label for="f-valor">Valor (R$)</label><input id="f-valor" type="number" step="0.01" min="0" value="${v.valor ?? ''}"></div>
+      <div class="field"><label for="f-status">Situação</label><select id="f-status">${optsSt}</select></div>
+      <div class="field"><label class="check"><input id="f-pror" type="checkbox" ${v.prorrogavel ? 'checked' : ''}>Prorrogável</label></div>
+      <div class="field"><label for="f-prorfeitas">Prorrogações já feitas</label><input id="f-prorfeitas" type="number" min="0" step="1" value="${v.prorrogacoes_feitas ?? 0}"></div>
+      <div class="field full"><label for="f-alertas">Avisar com quantos dias de antecedência</label><input id="f-alertas" value="${esc((v.alertas_dias || ALERTAS_PADRAO).join(', '))}"></div>
+      <div class="field full"><label for="f-obs">Observações</label><textarea id="f-obs">${esc(v.observacoes)}</textarea></div>
+    </div>
+    <div class="form-erro" id="form-erro"></div>
+    <div class="modal-actions">
+      ${c ? `<button class="btn-danger" onclick="excluirContrato('${esc(c.id)}')">Excluir</button>` : ''}
+      <span class="spacer"></span>
+      <button class="btn-sec" onclick="fecharModal()">Cancelar</button>
+      <button class="btn-primary" id="btn-salvar" onclick="submeterContrato(${c ? `'${esc(c.id)}'` : 'null'})">${c ? 'Salvar alterações' : 'Adicionar contrato'}</button>
+    </div>`);
+}
+
+async function submeterContrato(id) {
+  const g = x => document.getElementById(x);
+  const erro = g('form-erro');
+  const orgao = g('f-orgao').value.trim(), numero = g('f-numero').value.trim();
+  const inicio = g('f-inicio').value, fim = g('f-fim').value;
+  if (!orgao || !numero || !fim) { erro.textContent = 'Preencha órgão, número e fim da vigência.'; return; }
+  if (inicio && inicio > fim) { erro.textContent = 'O início da vigência está depois do fim.'; return; }
+  const alertas = g('f-alertas').value.split(/[,;\s]+/).map(Number).filter(n => Number.isInteger(n) && n > 0);
+  if (!alertas.length) { erro.textContent = 'Informe ao menos um prazo de aviso, ex.: 120, 90, 60, 30.'; return; }
+
+  const atual = id ? contratos.find(x => x.id === id) : {};
+  const registro = {
+    ...atual,
+    id: id || novoId(),
+    empresa_id: g('f-empresa').value,
+    orgao, numero,
+    objeto: g('f-objeto').value.trim(),
+    valor: g('f-valor').value === '' ? null : Number(g('f-valor').value),
+    inicio: inicio || null,
+    fim,
+    prorrogavel: g('f-pror').checked,
+    prorrogacoes_feitas: Number(g('f-prorfeitas').value) || 0,
+    alertas_dias: [...new Set(alertas)].sort((a, b) => b - a),
+    status: g('f-status').value,
+    observacoes: g('f-obs').value.trim()
+  };
+  const novaLista = id ? contratos.map(x => x.id === id ? registro : x) : [...contratos, registro];
+
+  g('btn-salvar').disabled = true; g('btn-salvar').textContent = 'Salvando…';
+  try {
+    await salvarContratos(novaLista, `${id ? 'Atualiza' : 'Adiciona'} contrato ${numero} (${orgao})`);
+    fecharModal(); rerenderEmpresa(); toast(id ? 'Contrato atualizado' : 'Contrato adicionado');
+  } catch (e) {
+    erro.textContent = e.message;
+    g('btn-salvar').disabled = false; g('btn-salvar').textContent = id ? 'Salvar alterações' : 'Adicionar contrato';
+  }
+}
+
+async function excluirContrato(id) {
+  const c = contratos.find(x => x.id === id);
+  if (!c || !confirm(`Excluir o contrato ${c.numero} (${c.orgao})? Essa ação fica registrada no histórico do repositório.`)) return;
+  try {
+    await salvarContratos(contratos.filter(x => x.id !== id), `Remove contrato ${c.numero} (${c.orgao})`);
+    fecharModal(); rerenderEmpresa(); toast('Contrato excluído');
+  } catch (e) { document.getElementById('form-erro').textContent = e.message; }
+}
+
 
 let dadosGlobais = null;
 let empresaAtiva = 0;
@@ -170,6 +493,7 @@ function renderEmpresa(emp) {
   }
 
   return `
+    ${renderCnpj(emp)}
     <div class="metrics">
       <div class="metric"><div class="metric-val" style="color:var(--red)">${vencidas}</div><div class="metric-label">Vencidas</div></div>
       <div class="metric"><div class="metric-val" style="color:var(--orange)">${criticas}</div><div class="metric-label">Crítico ≤2d</div></div>
@@ -180,6 +504,7 @@ function renderEmpresa(emp) {
     ${grupo('🟠 Crítico — vencem em até 2 dias', certs.filter(c=>c.dias>=0&&c.dias<=2), 2)}
     ${grupo('🔵 Atenção — vencem em até 5 dias', certs.filter(c=>c.dias>2&&c.dias<=5), 4)}
     ${grupo('🟢 Em dia', certs.filter(c=>c.dias>5), 6)}
+    ${renderContratos(emp)}
   `;
 }
 
@@ -306,7 +631,7 @@ function renderApp(data) {
 
   document.getElementById('app').innerHTML = `
     <div class="header">
-      <div class="tag">Painel de Certidões</div>
+      <div class="tag">Painel de Certidões e Contratos</div>
       <h1>ETP · <span>Vetra Norte</span></h1>
       <div class="updated">atualizado em ${atualizado} · hoje é ${hoje.toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'})}</div>
     </div>
@@ -332,9 +657,8 @@ function trocarEmpresa(idx, btn) {
   document.getElementById('gantt-container').innerHTML = renderGantt(emp);
 }
 
-fetch('certidoes.json?v=' + Date.now())
-  .then(r => r.json())
-  .then(renderApp)
+Promise.all([fetch('certidoes.json?v=' + Date.now()).then(r => r.json()), carregarContratos()])
+  .then(([dados]) => renderApp(dados))
   .catch(() => {
     document.getElementById('loading').innerHTML = '<p style="color:var(--red);font-family:DM Mono,monospace;font-size:13px">Erro ao carregar certidoes.json</p>';
   });
