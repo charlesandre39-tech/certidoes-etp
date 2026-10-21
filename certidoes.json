@@ -3,6 +3,7 @@
     {
       "id": "etp",
       "nome": "ETP Consultoria e Assessoria",
+      "cnpj": "43.431.191/0001-59",
       "certidoes": [
         {
           "nome": "CND FALÊNCIA",
@@ -875,19 +876,8 @@
     {
       "id": "vetra",
       "nome": "Vetra Norte Engenharia",
+      "cnpj": "67.740.857/0001-19",
       "certidoes": [
-        {
-          "nome": "CND FGTS",
-          "orgao": "Caixa Econômica Federal",
-          "vencimento": "2026-10-20",
-          "emissao": "2026-09-20",
-          "arquivo": "CND FGTS 20-10-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
-            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
-          }
-        },
         {
           "nome": "CND SEFAZ",
           "orgao": "Secretaria de Estado da Fazenda do Amazonas",
@@ -910,6 +900,18 @@
           "links": {
             "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
             "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
+        },
+        {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-11-13",
+          "emissao": "2026-10-14",
+          "arquivo": "CND FGTS 13-11-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
           }
         },
         {
@@ -1035,6 +1037,18 @@
           }
         },
         {
+          "nome": "CND FGTS",
+          "orgao": "Caixa Econômica Federal",
+          "vencimento": "2026-10-20",
+          "emissao": "2026-09-20",
+          "arquivo": "CND FGTS 20-10-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+            "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+          }
+        },
+        {
           "nome": "CND TRABALHISTA",
           "orgao": "Justiça do Trabalho do Amazonas",
           "vencimento": "2027-01-12",
@@ -1050,5 +1064,5 @@
     }
   ],
   "atualizado": "2026-10-21",
-  "gerado_em": "21/10/2026 09:12"
+  "gerado_em": "21/10/2026 19:17"
 }
