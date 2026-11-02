@@ -7,17 +7,17 @@
       "numero": "043/2025",
       "objeto": "contratação de empresa para prestação de serviços de assessoria e consultoria técnica, abrangendo a elaboração de planos de trabalhos para captação de recursos, o acompanhamento da execução de convênios e contratos de repasse firmados com o Governo Federal e Estadual bem como apoio técnico na elaboração das respectivas prestações de contas, com utilização dos sistemas oficiais de gestão de transferências voluntárias, conforme a necessidades do município de Envira/Am",
       "valor": 145728,
-      "inicio": "2026-04-14",
-      "fim": "2027-04-14",
+      "inicio": "2025-04-14",
+      "fim": "2026-04-14",
       "prorrogavel": true,
-      "prorrogacoes_feitas": 1,
+      "prorrogacoes_feitas": 0,
       "alertas_dias": [
         120,
         90,
         60,
         30
       ],
-      "status": "vigente",
+      "status": "em_renovacao",
       "observacoes": ""
     },
     {
