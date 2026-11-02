@@ -19,6 +19,26 @@
       ],
       "status": "vigente",
       "observacoes": ""
+    },
+    {
+      "id": "cmvzrband3yjn",
+      "empresa_id": "etp",
+      "orgao": "Prefeitura de Eirunepé",
+      "numero": "081/2025",
+      "objeto": "Serviços de assessoria e consultoria técnica em transferências voluntárias nos sistemas INVESTSUS e SIGTV, compreendendo a elaboração de planos de trabalho visando à captação de recursos, o acompanhamento da execução e a prestação de contas dos recursos recebidos, com uso de ferramentas dos referidos sistemas",
+      "valor": 72000,
+      "inicio": "2026-04-15",
+      "fim": "2027-04-15",
+      "prorrogavel": true,
+      "prorrogacoes_feitas": 1,
+      "alertas_dias": [
+        120,
+        90,
+        60,
+        30
+      ],
+      "status": "vigente",
+      "observacoes": ""
     }
   ]
 }
