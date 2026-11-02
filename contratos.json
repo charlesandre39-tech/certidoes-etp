@@ -39,6 +39,26 @@
       ],
       "status": "vigente",
       "observacoes": ""
+    },
+    {
+      "id": "cmvzrdinq0eqg",
+      "empresa_id": "etp",
+      "orgao": "Câmara de eirunepé",
+      "numero": "009/2026",
+      "objeto": "Contratação de Empresa Especializada para Prestação de Serviços de Apoio Técnico Parlamentar e Administrativo aos Trabalhos Legislativos, para Atender as Necessidades da Câmara Municipal de Eirunepé",
+      "valor": 48000,
+      "inicio": "2026-06-19",
+      "fim": "2026-06-19",
+      "prorrogavel": true,
+      "prorrogacoes_feitas": 0,
+      "alertas_dias": [
+        120,
+        90,
+        60,
+        30
+      ],
+      "status": "vigente",
+      "observacoes": ""
     }
   ]
 }
