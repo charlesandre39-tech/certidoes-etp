@@ -6,18 +6,6 @@
       "cnpj": "43.431.191/0001-59",
       "certidoes": [
         {
-          "nome": "CND FALÊNCIA",
-          "orgao": "Tribunal de Justiça do Amazonas",
-          "vencimento": "2026-11-26",
-          "emissao": "2026-10-27",
-          "arquivo": "CND FALÊNCIA 26-11-2026.pdf",
-          "vigencia_dias": 30,
-          "links": {
-            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
-            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
-          }
-        },
-        {
           "nome": "CND SEFAZ",
           "orgao": "Secretaria de Estado da Fazenda do Amazonas",
           "vencimento": "2026-11-26",
@@ -51,6 +39,18 @@
           "links": {
             "emitir": "https://www.tst.jus.br/certidao",
             "comprovar": "https://www.tst.jus.br/certidao"
+          }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Tribunal de Justiça do Amazonas",
+          "vencimento": "2026-12-26",
+          "emissao": "2026-11-26",
+          "arquivo": "CND FALÊNCIA 26-12-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
+            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
           }
         },
         {
@@ -906,6 +906,18 @@
             "emitir": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
             "comprovar": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
           }
+        },
+        {
+          "nome": "CND FALÊNCIA",
+          "orgao": "Tribunal de Justiça do Amazonas",
+          "vencimento": "2026-11-26",
+          "emissao": "2026-10-27",
+          "arquivo": "CND FALÊNCIA 26-11-2026.pdf",
+          "vigencia_dias": 30,
+          "links": {
+            "emitir": "https://sistemas.tjam.jus.br/certidaounica/#/home",
+            "comprovar": "https://sistemas.tjam.jus.br/certidaounica/#/home"
+          }
         }
       ]
     },
@@ -1159,6 +1171,6 @@
       ]
     }
   ],
-  "atualizado": "2026-11-26",
-  "gerado_em": "26/11/2026 08:00"
+  "atualizado": "2026-11-27",
+  "gerado_em": "27/11/2026 08:04"
 }
